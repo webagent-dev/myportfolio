@@ -1,11 +1,12 @@
-
-import './App.css';
-
+import { AppContainer, GlobalStyle } from './app.style'
+import { Container, Land} from './one'
 function App() {
   return (
-    <div className="App">
-        <h1>Hello-WORLD</h1>
-    </div>
+    <AppContainer>
+      <GlobalStyle />
+      <Land />
+      {/* <Container /> */}
+    </AppContainer>
   );
 }
 
