@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {  animated } from 'react-spring'
+import {  } from 'react-spring'
 export const LandContainer = styled.div`
 width: 100%vw;
 height: 100vh;
@@ -11,37 +11,206 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-`
-export const LandWrapper = styled(animated.div)`
-    width: 50%;
-    height: 50%;
-    padding: 3em;
-    display: inline-block;
-    background: #C7D2FE66;
-    z-index: 99;
-    border-radius: 10px;
-    position: relative;
-    backdrop-filter: blur(10px);
-    border: 2px solid transparent;
-    background-clip: border-box;
-    cursor: pointer;
-`
-export const Title = styled.div`
 
+.custom-shape-divider-bottom-1643788872 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1643788872 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 283px;
+}
+
+.custom-shape-divider-bottom-1643788872 .shape-fill {
+    fill: lightgray;
+    opacity: .5;
+}
+`
+
+export const Title = styled.div`
+max-width: 700px;
+padding: 10px;
+text-align: center;
+font-size: 30px;
+text-transform: uppercase;
+color: #164054;
+
+    font-family: 'Alfa Slab One', cursive;
 `
 export const  LandDesc = styled.div`
-
+font-family: 'Mukta', sans-serif;
+font-size: 25px;
+font-weight: 700;
+text-transform: capitalize;
 ` 
 export const Social = styled.div`
+display: flex;
+gap: 1rem;
+padding: 20px;
 
 ` 
 export const Icon = styled.div`
-
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 50%;
+    align-items: center;
+justify-content: center;
+cursor: pointer;
+padding: 5px;
+transform: scale(1);
+transition: all .5s linear;
+&:hover{
+    transform: scale(1.2); 
+    background: transparent !important;
+    color: black;
+}
 `
 export const MoveContainer = styled.div`
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+    animation: animate 10s linear  infinite;
+   
+    @keyframes animate{
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-800px) rotate(360deg);
+            opacity: 0;
+        }
+    }
 `
-export const Image = styled.img``
+export const Image1 = styled.img`
+position: absolute;
+   bottom: 160px;
+       left: 76%;
+        height: 80px;
+        width: 80px;
+        animation-delay: 0s;
+           object-fit: contain;
+`
+export const Image2 = styled.img`
+position: absolute;
+       bottom: 120px;
+       left: 32%;
+        height: 80px;
+        width: 80px;
+        animation-delay: 1.5s;
+        animation-duration: 10s;
+           object-fit: contain;
+`
+export const Image3 = styled.img`
+position: absolute;
+   bottom: 180px;
+           left: 12%;
+        height: 100px;
+        width: 100px;
+        animation-delay: 5.5s;
+           object-fit: contain;
+`
+export const Image4 = styled.img`
+position: absolute;
+             bottom: 190px;
+       right: 50%;
+        height: 50px;
+        width: 50px;
+        animation-delay: 0s;
+        animation-duration: 15;
+           object-fit: contain;
+`
+export const Image5 = styled.img`
+position: absolute;
+
+bottom: 90px;
+        right: 55%;
+        height: 40px;
+        width: 40px;
+        animation-delay: 0;
+           object-fit: contain;
+        `
+export const Image6 = styled.img`
+position: absolute;
+top: 50px;
+            /* left: -15%; */
+        height: 50px;
+        bottom: 30px;
+        width: 110px;
+        animation-delay: 3.5s;
+           object-fit: contain;
+`
+export const Image7 = styled.img`
+position: absolute;
+top: 80px;
+bottom: 30px;
+       left: 82%;
+        height: 80px;
+        width: 80px;
+        animation-delay: 3.5s;
+           object-fit: contain;
+        `
+export const Image8 = styled.img`
+top: 50px;
+    bottom: 30px;
+       left: 40%;
+        height: 30px;
+        width: 30px;
+        animation-delay: 3.5s;
+        object-fit: contain;
+`
+export const SliderHeader = styled.div``
+export const Slide = styled.div`
+    width: 100%;
+    height: 200px;
+    height: 30px;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+   
+
+`
+export const Span = styled.div`
+display: inline-block;
+color: ${props => props.text};
+font-family: 'Permanent Marker', cursive;
+font-size: 30px;
+font-weight: 500;
+`
+export const Text = styled.div`
+font-family: 'Permanent Marker', cursive;
+height: 50px;
+font-size: 30px;
+color: ${props => props.text};
+animation: move 10s ease-in-out infinite alternate;
+
+ @keyframes move {
+            25%{
+                transform: translateY(-70px);
+            }50%{
+                         transform: translateY(-120px);
+            }75%{
+                         transform: translateY(-130px);
+            }100%{
+                             transform: translateY(-210px);
+            }
+    }
+`
