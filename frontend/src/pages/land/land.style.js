@@ -10,7 +10,12 @@ background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 position: relative;
+gap: 2rem;
+transition: all 2s ease-in-out;
+overflow-x: hidden;
+overflow-y: scroll;
 
 .custom-shape-divider-bottom-1643788872 {
     position: absolute;
@@ -41,19 +46,31 @@ text-align: center;
 font-size: 30px;
 text-transform: uppercase;
 color: #164054;
-
     font-family: 'Alfa Slab One', cursive;
+
+            @media (max-width: 630px){
+                      font-size: 20px;    
+    }
 `
 export const  LandDesc = styled.div`
 font-family: 'Mukta', sans-serif;
 font-size: 25px;
 font-weight: 700;
 text-transform: capitalize;
+text-align: center;
+
+   @media (max-width: 630px){
+                      font-size: 18px;    
+    }
 ` 
 export const Social = styled.div`
 display: flex;
 gap: 1rem;
 padding: 20px;
+
+   @media (max-width: 630px){
+                   padding: 15px;
+    }
 
 ` 
 export const Icon = styled.div`
@@ -74,6 +91,10 @@ transition: all .5s linear;
     background: transparent !important;
     color: black;
 }
+   @media (max-width: 630px){
+                    width: 30px;
+    height: 30px;
+    }
 `
 export const MoveContainer = styled.div`
     width: 90%;
@@ -194,10 +215,13 @@ color: ${props => props.text};
 font-family: 'Permanent Marker', cursive;
 font-size: 30px;
 font-weight: 500;
+   @media (max-width: 630px){
+                font-size: 20px;  
+    }
 `
 export const Text = styled.div`
 font-family: 'Permanent Marker', cursive;
-height: 50px;
+height: 55px;
 font-size: 30px;
 color: ${props => props.text};
 animation: move 10s ease-in-out infinite alternate;
@@ -212,5 +236,36 @@ animation: move 10s ease-in-out infinite alternate;
             }100%{
                              transform: translateY(-210px);
             }
+    }
+       @media (max-width: 630px){
+                font-size: 25px;  
+    }
+`
+
+export const Loading = styled.div`
+font-size: 2rem;
+font-weight: 700;
+font-family: 'Rowdies', cursive;
+animation: jump 10s linear infinite alternate;
+padding: 5px;
+text-align: center;
+
+@keyframes jump {
+    0%{
+            transform: scale(1);
+            opacity: 0.3;
+    }50%{
+               transform: scale(1.2);
+            opacity: 1;
+            color: whitesmoke;
+    }100%{
+               transform: scale(1);
+            opacity: 0.3;
+    }
+
+}
+
+       @media (max-width: 340px){
+                font-size: 1rem;  
     }
 `
