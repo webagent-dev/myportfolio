@@ -37,7 +37,6 @@ export const HeaderContainer  = styled.div`
 }
 
 @media(max-width:450px){
-    z-index: 99;
        margin-bottom: 1.5rem; 
 }
 `
@@ -60,6 +59,7 @@ font-size: 700;
 color: skyblue;
 /* letter-spacing: 2px; */
 font-style: italic;
+cursor: pointer;
 
 @media (max-width: 715px) {
         display: none;
@@ -179,4 +179,8 @@ export const ToggleContainer = styled.div`
     width: 100%;
     height: 86vh;
     padding: 20px;
+    position: relative;
+        @media (min-width: 715px) {
+        display: none;
+    }
 `
