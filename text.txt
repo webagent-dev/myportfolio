@@ -4,3 +4,24 @@ font-family: 'Mukta', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Rowdies', cursive;
 font-family: 'Source Code Pro', monospace;
+
+
+  <div className="divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" className="fill"></path>
+    </svg>
+</div>
+
+
+  <ItemWrapper key={i}>
+                <ImageWrapper>
+                  <Image  src='/assets/img/react.png' alt='img_desc' />
+                </ImageWrapper>
+                <TextWrapper>
+                  <Title> Reactjs</Title>
+                  <Descs>A JavaScript library for building user interfaces</Descs>
+                  <Other>
+                    React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes
+                  </Other>
+                </TextWrapper>
+     <ItemWrapper />

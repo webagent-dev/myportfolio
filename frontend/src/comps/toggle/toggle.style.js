@@ -20,7 +20,8 @@ align-items: center;
 justify-content: space-between;
 height: 60px;
 padding: 1rem;
-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 66% 76%, 0% 75%)
+ background: ${props => props.mode === 'true' ? 'black' : 'white'};
+    color: ${props => props.mode === 'true' ? 'white' : 'black'};
 `
  export const Logo  = styled.h2`
     font-family: 'Source Code Pro', monospace;
@@ -43,7 +44,6 @@ cursor: pointer;
         padding: 5px 15px;
     border: none;
     outline: none;
-    background: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
     font-size: 7px;
@@ -78,8 +78,8 @@ color: lightgray;
 
  export const List = styled.div`
  height: 85vh;
-    background: black;
-    color:  white;padding: 20px;
+    /* color:  white; */
+    padding: 20px;
     overflow: scroll;
     z-index: 999;
  `

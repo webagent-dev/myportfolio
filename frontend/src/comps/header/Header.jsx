@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Toggle } from '../../one'
+import { ThemeContext } from '../../context/ThemeContext'
 import { HeaderContainer, HeaderWrapper,Logo, Nav, Li,User, Button,Toggles, Text,Mode,On,ToggleContainer} from './header.style'
 import { FcPortraitMode,FcList, FcContacts,FcInfo, FcMenu,FcMinus, FcNightLandscape,FcLightAtTheEndOfTunnel} from 'react-icons/fc'
 import Flip from 'react-reveal'
 function Header() {
+    const { dispatch, state } = useContext(ThemeContext)
     const [toggle, setToggle ] = useState(false)
+    const ChangeMode = state.darkMode
   return (
       <>
-      <HeaderContainer>
+      <HeaderContainer mode={ChangeMode}>
           <Flip left>
           <HeaderWrapper>
           <Logo>
@@ -34,10 +37,18 @@ function Header() {
           <User>
               <Button>Register</Button>
               <Button>Login</Button>
-                <Mode>
-                    <FcLightAtTheEndOfTunnel  size='18px'/>
-                    <On>light</On>
+    
+        {
+            ChangeMode 
+            ?   <Mode onClick={() => dispatch({type: "Toggle"})}>
+                    <FcNightLandscape size='18px'/>
+                    <On>Dark</On>
           </Mode>
+          :   <Mode onClick={() => dispatch({type: "Toggle"})}>
+                    <FcLightAtTheEndOfTunnel size='18px'/>
+                    <On>Light</On>
+          </Mode>
+        }
           </User>
           <Toggles>
                 <FcMenu  size='30px' onClick={() => setToggle(true)}/>

@@ -1,8 +1,11 @@
 import { AppContainer, GlobalStyle } from './app.style'
-import { useState, useEffect  } from 'react'
+import { useState, useEffect, useContext  } from 'react'
 import { Container, Land} from './one'
 import { Routes, Route} from 'react-router-dom'
+import { ThemeContext } from './context/ThemeContext'
 function App() {
+  const { state} = useContext(ThemeContext)
+  const Mode = state.darkMode
   const [land, setLand] = useState(true)
 
   useEffect(() => {
@@ -13,7 +16,7 @@ function App() {
   },[])
   return (
     <AppContainer>
-      <GlobalStyle />
+      <GlobalStyle  mode={Mode}/>
           { land && <Land /> }
       <Routes>
    <Route path='/'  element={!land && <Container />} />

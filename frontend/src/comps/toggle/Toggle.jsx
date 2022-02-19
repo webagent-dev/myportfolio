@@ -1,32 +1,34 @@
-import React,{ useState} from 'react';
+import React,{ useState, useContext } from 'react';
 import { FaTimes} from 'react-icons/fa'
 import { Close,ToggleWrapper, Logo, Profile, Button, Mode,On, List, Nav, Li, Title, Drop,Text,Hidden,Div} from './toggle.style'
-import { FcPortraitMode,FcList, FcContacts,FcInfo, FcMenu,FcMinus, FcNightLandscape,FcLightAtTheEndOfTunnel, FcRight, FcExpand, FcCollapse,FcSettings,FcSupport} from 'react-icons/fc'
+import { FcPortraitMode,FcList, FcContacts,FcInfo, FcRight, FcExpand, FcCollapse,FcSettings,FcSupport} from 'react-icons/fc'
 import Zoom from 'react-reveal'
+import { ThemeContext } from '../../context/ThemeContext'
 function Toggle(props) {
   const [hide, setGetHide] = useState(false)
   const [service, setService] = useState(false)
   const [email, setEmail] = useState(false)
   const [phone, setPhone] = useState(false)
+  const { dispatch, state } = useContext(ThemeContext) 
+  const changeMode = state.darkMode
+  const handleDrop = () => {
+    dispatch({type: 'Toggle'})
+    props.getToggle(false)
+  }
   return <div>
     <Close  onClick={() => props.getToggle(false)}>
       <FaTimes  size='30px' color='coral' />
       </Close>
-      <ToggleWrapper>
+      <ToggleWrapper mode={changeMode}>
                  <Logo>
                 <h1>Webagent-dev</h1>
              </Logo>
              <Profile>
-               <Button>Register</Button>
-               <Button>Register</Button>
-
-                               <Mode>
-                    <FcLightAtTheEndOfTunnel  size='18px'/>
-                    <On>light</On>
-          </Mode>
+               <Button dark={changeMode} >Register</Button>
+               <Button dark={changeMode} >Login</Button>
              </Profile>
       </ToggleWrapper>
-      <List>
+      <List mode={changeMode}>
   <Nav>
       <Li onClick={() =>setGetHide(!hide) } >
         <Div>
@@ -64,12 +66,9 @@ function Toggle(props) {
   service &&
      <Hidden>
        <Zoom left>
-           <Drop>
-                 <Text>Dark Mode</Text>
+           <Drop onClick={() => handleDrop()}>
+                 <Text>Toggle{ !changeMode ? ' Dark' : ' Light' } Mode</Text>
                    </Drop>
-                     <Drop>
-      <Text>Light Mode</Text>
-        </Drop>
          <Nav>
       <Li onClick={() =>setEmail(!email) }>
            <Title>My Email</Title>

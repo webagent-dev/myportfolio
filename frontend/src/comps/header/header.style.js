@@ -27,7 +27,7 @@ export const HeaderContainer  = styled.div`
 }
 
 .svg__wrapper .shape-fill {
-    fill: #F5EAEA;
+    fill: lightgray;
 }
 @media (max-width: 715px) {
         position: absolute;
@@ -121,7 +121,6 @@ export const Button = styled.button`
     padding: 5px 15px;
     border: none;
     outline: none;
-    background: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
     font-size: 10px;
