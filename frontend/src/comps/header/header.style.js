@@ -6,6 +6,8 @@ export const HeaderContainer  = styled.div`
     height: 80px;
     border-bottom: 2px solid whitesmoke;
     position: relative;
+    z-index: 99;
+    background: white;
     
 .svg__wrapper{
     position: absolute;
@@ -30,10 +32,14 @@ export const HeaderContainer  = styled.div`
     fill: lightgray;
 }
 @media (max-width: 715px) {
-        position: absolute;
+
+        position: fixed;
         bottom: 0;
             border-bottom: none;
             border-top: 2px solid whitesmoke;
+            z-index: 99;
+            background: whitesmoke;
+            color: black;
 }
 
 @media(max-width:450px){
@@ -181,5 +187,16 @@ export const ToggleContainer = styled.div`
     position: relative;
         @media (min-width: 715px) {
         display: none;
+    }
+
+        @media (max-width:670px){
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            /* background: whitesmoke; */
+              background: url('assets/img/desc-header.svg');
+            z-index: 99;
+            top: 0;
+            left: 0;
     }
 `

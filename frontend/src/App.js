@@ -1,6 +1,6 @@
 import { AppContainer, GlobalStyle } from './app.style'
 import { useState, useEffect, useContext  } from 'react'
-import { Container, Land} from './one'
+import { Container, Land, About} from './one'
 import { Routes, Route} from 'react-router-dom'
 import { ThemeContext } from './context/ThemeContext'
 function App() {
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const close = setInterval(() => {
            setLand(false)
-    }, 10000)
+    }, 5000)
     return () => clearInterval(close)
   },[])
   return (
@@ -20,6 +20,7 @@ function App() {
           { land && <Land /> }
       <Routes>
    <Route path='/'  element={!land && <Container />} />
+   <Route path='/about_me' element={ !land && <About />} />
     </Routes>
     </AppContainer>
   );

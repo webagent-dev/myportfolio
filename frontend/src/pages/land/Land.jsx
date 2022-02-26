@@ -26,6 +26,10 @@ const trans = (x, y, s, ) => `perspective(600px) rotateX(${x}deg) rotateY(${y}de
     align-items: center;
     flex-direction: column;
     justify-content: center;
+             backdrop-filter: blur(10px);
+    background-clip: border-box;
+/* box-shadow: inset -6px -6px -12px, inset 6px 6px 12px; */
+ box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
 
     @media (max-width: 980px){
       width: 80%;

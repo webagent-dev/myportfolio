@@ -1,18 +1,23 @@
 import React, { } from 'react';
 import styled from 'styled-components'
 // import { ThemeContext } from '../context/ThemeContext'
-import { Header,Slider, Desc} from '../one'
+import { Header,Slider, Desc, Feature, Cta,Footer} from '../one'
 
 const Wrapper = styled.div``
 function Container() {
 
   
   return (
+  <>
   <Wrapper>
-    <Header />
-    <Slider />
-    <Desc />
-  </Wrapper>
+      <Header />
+      <Slider />
+      <Desc />
+      <Feature />
+      <Cta />
+      <Footer />
+    </Wrapper>
+    </>
   )
 }
 

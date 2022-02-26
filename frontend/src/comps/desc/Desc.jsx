@@ -1,9 +1,8 @@
 import React from 'react';
 // import { Image, Text } from '../../one'
-import  { DescContainer,Title,Small,  Wrapper,HeaderWrapper, Header, ItemWrapper,
+import  { DescContainer,Title,Small,  Wrapper,HeaderWrapper, HeaderWrappers, Header, ItemWrapper,
    ImageWrapper, Image, TextWrapper, Other, Descs } from './desc.style'
 import { desc } from '../../data'
-const list = [1,2,3,4]
 function Desc() {
   return (
       <DescContainer>
@@ -36,6 +35,12 @@ function Desc() {
       ))
     }
      </Wrapper>
+      <HeaderWrappers>
+        <Header>
+            <Title>What Is Marn Stack</Title>
+        <Descs width='80%'>reliable solution to a full-stack web application</Descs>
+        </Header>
+      </HeaderWrappers>
       </DescContainer>
   )
 }

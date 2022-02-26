@@ -16,6 +16,7 @@ gap: 2rem;
 transition: all 2s ease-in-out;
 overflow-x: hidden;
 overflow-y: scroll;
+  animation: app 5s linear infinite alternate;
 
 .custom-shape-divider-bottom-1643788872 {
     position: absolute;
@@ -36,6 +37,12 @@ overflow-y: scroll;
 .custom-shape-divider-bottom-1643788872 .shape-fill {
     fill: lightgray;
     opacity: .5;
+}
+
+    @keyframes app {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
 }
 `
 
