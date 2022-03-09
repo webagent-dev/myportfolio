@@ -8,6 +8,9 @@ export const MainContainer = styled.div`
     display: flex;
     overflow: none;
     background: whitesmoke;
+         @media(max-width: 480px){
+      height: auto;
+ }
 `
 
  export const FirstWrapper = styled.div`
@@ -32,6 +35,9 @@ export const  SecondWrapper = styled.div`
 flex: 1;
 position: relative;
  z-index: 1;
+ @media(max-width: 480px){
+    display: none;
+ }
 `
 export const Resume = styled.button`
   border: none;
@@ -71,9 +77,13 @@ export const ImageWrapper = styled.div`
   font-weight: 700;
   font-family: 'Alfa Slab One', cursive;
   text-transform: uppercase;
-  margin-bottom: ${props => props.just}
+  margin-bottom: ${props => props.just};
 
-
+       @media(max-width: 480px){
+    display: block;
+    height: auto;
+    font-size: 25px;
+ }
 `
   export const Desc = styled.p`
     max-width: 90%;
@@ -96,4 +106,17 @@ export const ImageWrapper = styled.div`
   export const Image = styled.img`
     width: 100%;
     object-fit: contain;
+  `
+
+  export const Mobile = styled.div`
+      display: flex;
+      align-items: center;
+  `
+  export const  MobileImageWrapper = styled(ImageWrapper )`
+      display: none;
+
+       @media(max-width: 480px){
+    display: block;
+    height: auto;
+ }
   `

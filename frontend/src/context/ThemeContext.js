@@ -1,4 +1,5 @@
-import { createContext, useReducer } from 'react'
+import { createContext, useReducer, useState } from 'react'
+import { port } from '../data'
 
 export const ThemeContext = createContext()
 
@@ -16,10 +17,14 @@ const Reducer = (state, action) => {
         }
 }
 
+const allCategory = ['all']
 export const ThemeProvider = (props) => {
     const [state, dispatch ] = useReducer(Reducer, InitialState)
+    const [cat, setCat] = useState()
+    const [items, setItems] = useState(port)
+
     return(
-        <ThemeContext.Provider value={{state, dispatch}}>
+        <ThemeContext.Provider value={{state, dispatch, cat, setCat, items, setItems}}>
             {props.children}
             </ThemeContext.Provider>
     )

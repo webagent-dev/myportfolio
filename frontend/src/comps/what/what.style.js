@@ -18,6 +18,10 @@ padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
     /* gap: 2rem; */
+
+        @media (max-width: 728px){
+         width: 100%;
+    }
  `
  export const Container = styled.div`
  max-width: 200px;
@@ -33,6 +37,12 @@ padding: 20px;
         background: lightgray;
         padding: 10px;
         border-radius: 20px;
+    }
+        @media (max-width: 728px){
+        max-width: 400px;
+    }
+            @media (max-width: 500px){
+       ma-width: 100%;
     }
  `
 export const  ImageWrapper = styled.div`
@@ -63,4 +73,7 @@ export const Image = styled.img`
  max-width: 90%;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+            @media (max-width: 728px){
+      width: 100%;
+    }
  `

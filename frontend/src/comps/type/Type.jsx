@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Text } from './type.style'
-function Type({text}) {
+function Type({ head, text}) {
   return (
     <Container>
       { 

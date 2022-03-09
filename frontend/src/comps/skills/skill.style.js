@@ -12,6 +12,11 @@ padding: 10px;
     display: flex;
     align-items: center;
     gap: 1rem;
+
+   @media (max-width: 958px){
+     width: 100%;
+    flex-direction: column;
+    }
  `
  export const MainContainer = styled.div`
  width: 90%;
@@ -21,7 +26,12 @@ padding: 10px;
     gap: 1rem;
     padding: 2rem;
     transition: all 1s ease;
-
+           @media (max-width: 958px){
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+    }
  `
   export const BtnWrapper = styled.div`
     width: 300px;
@@ -31,6 +41,11 @@ padding: 10px;
     gap: 2rem;
     /* margin-right: 10px; */
 
+       @media (max-width: 958px){
+         flex-direction: row;
+         gap: 1rem;
+           /* flex-wrap: wrap; */
+    }
   `
   export const  Btn = styled.button`
   padding: 5px 15px;
@@ -39,6 +54,10 @@ padding: 10px;
   cursor: pointer;
      margin-right: 10px;
 
+         @media (max-width: 380px){
+  
+            margin-right: 0px;
+    }
   `
   export const ImageWrapper = styled.div`
     width: 100px;
@@ -55,6 +74,12 @@ padding: 10px;
     transform: scale(1);
     &:hover{
         transform: scale(1.2);
+    }
+
+           @media (max-width: 958px){
+       width: 70px;
+     height: 70px;
+
     }
   `
   export const Image = styled.img`
@@ -83,6 +108,10 @@ padding: 10px;
     font-family: 'Mukta', sans-serif;
     font-size: 15px;
     text-align: center;
+           @media (max-width: 958px){
+            font-size: 10px;
+    }
+    
   `
   export const Click = styled.div``
   export const Small = styled.p``

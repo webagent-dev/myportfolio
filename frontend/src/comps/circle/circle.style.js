@@ -26,4 +26,8 @@ animation: circle 10s linear  infinite alternate;
     50%{background-position:100% 17%}
     100%{background-position:0% 84%}
 }
+
+@media(max-width: 490px){
+  display: none;
+}
 `

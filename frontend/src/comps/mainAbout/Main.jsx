@@ -1,13 +1,19 @@
 import React from 'react'
 import { MainContainer, FirstWrapper, SecondWrapper,Title, Desc, Social,Image, Resume, ImageWrapper,
-Other, Hold, Icon } from './main.style'
+Other, Hold, Icon,Mobile, MobileImageWrapper } from './main.style'
 import {FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Circle } from '../../one'
 function Main() {
   return (
  <MainContainer>
-     <FirstWrapper>
-<Title>Full-stack web developer </Title>
+    <FirstWrapper>
+    <Mobile> 
+ <Title>Full-stack web developer </Title>
+     <MobileImageWrapper>
+          <Image src='/assets/img/port-use.png' alt='about-pic'/>
+             <Title just='30px' style={{fontSize: '15px'}}>Webagent-dev</Title>
+       </MobileImageWrapper>  
+</Mobile> 
 <Other>
 <Desc>I am an enthusiatic developer with an addiction for discovering new coding perspectives. i really mean it</Desc>
 <Social>

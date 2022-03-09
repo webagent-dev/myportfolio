@@ -344,3 +344,231 @@ export const tech = [
                 desc: 'deployment and server file handler'
     },
 ]
+
+export const cta = [
+        {
+        id: 1,
+        title: [
+            {
+            text: 'View My Project',
+            link: ''
+            },
+              {
+            text: 'about me',
+            link: ''
+            },
+              {
+            text: 'hire me',
+            link: ''
+            }
+        ],
+        msg: ''
+    },
+      {
+        id: 2,
+        title: [
+            {
+            text: 'contact me',
+            link: ''
+            },
+              {
+            text: 'my resume',
+            link: ''
+            },
+              {
+            text: 'My GitHub',
+            link: ''
+            }
+        ],
+        msg: ''
+    }
+]
+
+// javascript
+// jamstack
+// React-app
+// fullstack
+// css&html
+export const port = [
+{
+    category: 'javascript',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'html&css',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'react-app',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'jamstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'fullstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'javascript',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'html&css',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'react-app',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'jamstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'fullstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'javascript',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'html&css',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'react-app',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'jamstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'fullstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'javascript',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'html&css',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'react-app',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'jamstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+},
+{
+    category: 'fullstack',
+    name: 'what ever',
+    link: 'what-ever',
+    image: '',
+    video: '',
+    stack: ['one', 'two', 'three'],
+    desc: 'lorem10ddvfkjhfwbfwkfqhfqwkjwofqifb fsgviwhgfiwuhqfgy',
+}
+
+]

@@ -5,6 +5,8 @@ export const CtaContainer  = styled.div`
     height: 400px;
     background-color: whitesmoke;
  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('/android-chrome-512x512.png');
+display: flex;
+position: relative;
 
    animation: app 5s linear infinite alternate;
 
@@ -18,14 +20,21 @@ export const CtaContainer  = styled.div`
     background-size: 100px;
 }
 `
+export const Num = styled.div`
+    font-family: monospace;
+    font-size: 20px;
+`
  export const Wrapper = styled.div`
-    width: 90%;
+  min-width: 100vw;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+      overflow: hidden;
+     transform: translateX(${props => props.index * -100}vw);
+        transition: all 2s linear;
+
 
     @media (max-width:670px){
         width: 100%;
@@ -66,3 +75,22 @@ export const CtaContainer  = styled.div`
         font-weight: 500;
     }
  `
+
+ export const Option = styled.div`
+ z-index: 99;
+ position: absolute;
+ bottom: 5px;
+ left: 50%;
+ right: 50%;
+ display: flex;
+ align-items: center;
+gap: 1rem;
+
+ `
+ export const  Next = styled.div`
+ font-size: 40px;
+ font-weight: 700;
+ font-family: cursive;
+ cursor: pointer;
+ `
+  export const  Back = styled(Next)``
