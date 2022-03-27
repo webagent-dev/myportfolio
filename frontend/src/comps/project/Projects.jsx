@@ -1,9 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { ProjectContainer, HeaderContainer, Header, Info, Wrapper, SelectContainer, SortHeader,} from './project'
 import { BtnList, ProjectList } from '../../one'
 import { ThemeContext } from '../../context/ThemeContext'
 import { port } from '../../data'
 import Select from 'react-select'
+const filterBtn = ['all', ...new Set(port.map((item) => item.category))]
+console.log(filterBtn)
 const options = [
   { value: 'html&css', label: 'Html&Css' },
   { value: 'javascript', label: 'Javascript' },
@@ -12,12 +14,7 @@ const options = [
       { value: 'nodejs', label: 'Nodejs' },
         { value: 'nextjs', label: 'Nextjs' }
 ]
-const style ={
-  fontSize: "20px",
-  textTransform: "uppercase",
-  backgroundColor: 'white', 
-  color: 'skyblue'
-}
+
 const mainStyle = {
   select: styles => ({...styles,   fontSize: "20px",textTransform: "uppercase",backgroundColor:'white', 
   color: 'skyblue'}),
@@ -27,7 +24,7 @@ const mainStyle = {
 
 function Projects() {
   const {items, cat, setCat } = useContext(ThemeContext)
-  console.log(port)
+  const [project, setProject ] = useState(port)
   return (
     <ProjectContainer>
         <HeaderContainer>
@@ -46,8 +43,8 @@ function Projects() {
                 placeholder='Select Stack'
                 />
           </SelectContainer>
-            <BtnList />
-            <ProjectList />
+            <BtnList btn={filterBtn} />
+            <ProjectList project={project}/>
         </Wrapper>
     </ProjectContainer>
   )

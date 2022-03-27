@@ -1,8 +1,12 @@
 import React from 'react'
-
-function BtnList() {
+import { BtnListContainer, Btn,} from './btn'
+function BtnList({btn}) {
+  // console.log(btn)
   return (
-    <div>BtnList</div>
+    <BtnListContainer>
+      {
+        btn.map((btn) => <Btn key={btn}>{btn}</Btn>)
+    }</BtnListContainer>
   )
 }
 

@@ -2,6 +2,7 @@ import { default as Land} from './pages/land/Land'
 import { default as Container} from './pages/Container'
 import { default as About } from './pages/About'
 import { default as Project } from './pages/Project'
+import { default as SingleProject } from './pages/SingleProject'
 import { default as Header} from './comps/header/Header'
 import { default as Image} from './comps/image/Image'
 import { default as Slider} from './comps/slider/Slider'
@@ -24,5 +25,5 @@ import { default as ProjectList  } from './comps/list/ProjectList'
 export{
     Land, Container,Header, Toggle,Image, Text, Slider,
     Desc, Feature, Cta, Footer, About, Mainabout, Circle,
-    What, Type, Skill, Project, Projects ,BtnList, ProjectList
+    What, Type, Skill, Project, Projects ,BtnList, ProjectList,SingleProject
 }

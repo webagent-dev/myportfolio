@@ -1,6 +1,6 @@
 import { AppContainer, GlobalStyle } from './app.style'
 import { useState, useEffect, useContext  } from 'react'
-import { Container, Land, About, Project } from './one'
+import { Container, Land, About, Project, SingleProject } from './one'
 import { Routes, Route} from 'react-router-dom'
 import { ThemeContext } from './context/ThemeContext'
 function App() {
@@ -22,6 +22,7 @@ function App() {
    <Route path='/'  element={!land && <Container />} />
    <Route path='/about_me' element={ !land && <About />} />
       <Route path='/my_project' element={ !land && <Project />} />
+      <Route path='/get_project/:id' element={ !land && <SingleProject />} />
     </Routes>
     </AppContainer>
   );
