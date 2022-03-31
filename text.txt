@@ -3,7 +3,6 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Mukta', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Rowdies', cursive;
-font-family: 'Source Code Pro', monospace;
 
 
   <div className="divider">

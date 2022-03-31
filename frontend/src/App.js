@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const close = setInterval(() => {
            setLand(false)
-    }, 5000)
+    }, 3000)
     return () => clearInterval(close)
   },[])
   return (

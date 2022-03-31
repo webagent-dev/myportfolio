@@ -11,7 +11,7 @@ margin-top: 20px;
     gap: 1rem;
 border-radius: 5px;
     box-shadow: inset -6px -6px -12px, inset 6px 6px 12px lightgray;
-
+max-height: 400px;
 `
  export const ProjectContent = styled.div`
   position: absolute;
@@ -35,8 +35,9 @@ export const Wrapper = styled.div`
         transition: all 1s ease-in-out; 
 
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         padding: 10px;
+        z-index: 1;
     }
          &:hover ${ProjectContent}{
          opacity: 1;
@@ -58,7 +59,7 @@ export const ImageWrapper = styled.div`
     margin-right: 15px;
             transform: scale(1);
         transition: all 1s ease-in-out; 
-
+     cursor: pointer;
      &:hover{
         transform: scale(1.2);
 
@@ -98,6 +99,86 @@ export const ImageWrapper = styled.div`
     line-height: 1.5em;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 10px;
     padding: 5px;
+    color: gray;
  `
+
+  export const Stack  = styled.h3`
+      text-align: center;
+      text-decoration: underline;
+      font-weight: 700;
+      padding: 5px;
+      margin-bottom: 5px;
+      color: gray;
+  `
+  export const StackWrapper = styled.div`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+        gap: .5rem;
+      `
+   export const Tech = styled.p`
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 1.5em;
+      text-transform: capitalize;
+      padding: 1px;
+      background: skyblue;
+      border: 1px solid gray;
+      border-radius: 3px;
+      cursor: pointer;
+      color: green;
+      text-align: center;
+      font-family: monospace;
+   `
+   export const Other  = styled.div`
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+   `
+    export const RateContainer  = styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    `
+     export const Rate  = styled.div`
+     display: flex;
+     cursor: pointer;
+      gap: .2rem;
+     `
+     export const Num  = styled.h5`
+      font-weight: 700;
+    font-size: 8px;
+    font-family: 'Permanent Marker', cursive;
+     `
+      export const Comment  = styled.button`
+         border-radius: 2px;
+         border: none;
+         outline: none;
+         font-size: 12px;
+         text-decoration: underline;
+         color: skyblue;
+         text-transform: capitalize;
+         cursor: pointer;
+         text-align: center;
+    background: transparent;
+    font-family: 'Permanent Marker', cursive;
+    transition: all 1s linear;
+         &:hover{
+            background: skyblue;
+            color: green;
+                    text-decoration: none;
+                     font-size: 10px;
+                     border-radius: 5px;
+                         padding:2px  5px;
+         }
+      `
+       export const View  = styled(Comment)`
+              font-size: 10px;
+       `
+       export const Icons = styled.div``

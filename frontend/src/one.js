@@ -15,6 +15,8 @@ import { default as Cta } from './comps/cta/Cta'
 import { default as Circle } from './comps/circle/Circle'
 import { default as Footer } from './comps/footer/Footer'
 import { default as What } from './comps/what/What'
+import { default as Comment } from './comps/comment/Comment'
+import { default as Single } from './comps/single/Single'
 import { default as Type } from './comps/type/Type'
 import { default as Skill } from './comps/skills/Skill'
 import { default as Projects  } from './comps/project/Projects'
@@ -25,5 +27,6 @@ import { default as ProjectList  } from './comps/list/ProjectList'
 export{
     Land, Container,Header, Toggle,Image, Text, Slider,
     Desc, Feature, Cta, Footer, About, Mainabout, Circle,
-    What, Type, Skill, Project, Projects ,BtnList, ProjectList,SingleProject
+    What, Type, Skill, Project, Projects ,BtnList, ProjectList,SingleProject,
+    Single, Comment
 }

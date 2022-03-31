@@ -5,7 +5,6 @@ import { ThemeContext } from '../../context/ThemeContext'
 import { port } from '../../data'
 import Select from 'react-select'
 const filterBtn = ['all', ...new Set(port.map((item) => item.category))]
-console.log(filterBtn)
 const options = [
   { value: 'html&css', label: 'Html&Css' },
   { value: 'javascript', label: 'Javascript' },
@@ -25,6 +24,15 @@ const mainStyle = {
 function Projects() {
   const {items, cat, setCat } = useContext(ThemeContext)
   const [project, setProject ] = useState(port)
+  const filterProject = (cat) => {
+  if(cat === 'all'){
+      setProject(port)
+      return;
+  }
+  const newProject = port.filter((item) => item.category === cat)
+  setProject(newProject)
+  console.log(newProject)
+}
   return (
     <ProjectContainer>
         <HeaderContainer>
@@ -43,7 +51,7 @@ function Projects() {
                 placeholder='Select Stack'
                 />
           </SelectContainer>
-            <BtnList btn={filterBtn} />
+            <BtnList btn={filterBtn}  filter={filterProject} />
             <ProjectList project={project}/>
         </Wrapper>
     </ProjectContainer>
