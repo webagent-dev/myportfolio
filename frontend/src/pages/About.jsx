@@ -1,9 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Header, Cta, Footer, Mainabout, What, Type, Skill } from '../one'
-const AboutContainer = styled.div``
+import { Flip } from 'react-reveal';
+const AboutContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+overflow-y: scroll;
+`
 function About() {
   return (
+<Flip bottom>
     <AboutContainer>
       <Header />
       <Mainabout />
@@ -14,6 +20,7 @@ function About() {
       <Cta />
       <Footer />
     </AboutContainer>
+    </Flip>
   )
 }
 

@@ -1,12 +1,24 @@
-import React from 'react'
+import React, {  useCallback } from 'react'
 // import { Underline } from '../footer/footer.style'
-import { ProjectListContainer, Wrapper, Image, ProjectContent, Name, Underline,Desc,ImageWrapper, IconWrapper,Icon, Text, Stack,StackWrapper, Tech, Other, RateContainer, Rate, Num, Icons, Comment, View} from './list'
-import { FcPortraitMode,FcList, FcContacts,FcInfo, FcMenu,FcMinus, FcNightLandscape,FcLightAtTheEndOfTunnel} from 'react-icons/fc'
+import { ProjectListContainer, Wrapper, Image, ProjectContent, Name, Underline,Desc,ImageWrapper, IconWrapper,Icon, Text, Stack,StackWrapper, Tech, Other, RateContainer, Rate, Num, Icons, Comment, View, } from './list'
+import { FcInfo,  FcNightLandscape,} from 'react-icons/fc'
+import { NavLink } from 'react-router-dom'
+import { Flip, Bounce } from 'react-reveal'
 const tech = [1,2,3,4,5]
-function ProjectList({project}) {
+function ProjectList({project, comment, focus}) {
   // console.log(project)
+  const handleClick =useCallback( () => {
+      comment(true)
+      focus.current.focus()
+  }, [comment, focus])
+  // useEffect(() => {
+  //   handleClick()
+  // },[handleClick])
   return (
-    <ProjectListContainer>{
+    <>
+    <ProjectListContainer>
+        <Flip bottom>
+      {
         project.map((item) => (
           <Wrapper key={item.id}>
             <ImageWrapper>
@@ -32,9 +44,11 @@ function ProjectList({project}) {
             <Desc>{item.desc}</Desc>
             <Stack>Tech</Stack>
             <StackWrapper>
+              <Bounce>
             {
               tech.map((item,i) =>    <Tech key={i}>reactjs </Tech>)
             }
+            </Bounce>
             </StackWrapper>
             <Other>
               <RateContainer>
@@ -47,12 +61,17 @@ function ProjectList({project}) {
                   <Num>345</Num>
                 </Rate>
               </RateContainer>
-              <Comment type='button'>comment</Comment>
+              <Comment type='button' onClick={ handleClick}>comment</Comment>
+              <NavLink to='/get_project/1'>
               <View>See More Details</View>
+              </NavLink>
             </Other>
           </Wrapper>
         ))
-      }</ProjectListContainer>
+       }
+    </Flip>
+      </ProjectListContainer>
+      </>
   )
 }
 

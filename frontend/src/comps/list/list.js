@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ProjectListContainer  = styled.div`
 width: 100%;
-height: 80vh;
+height: 70vh;
 padding: 20px;
 margin-top: 20px;
    overflow-y: scroll;
@@ -12,7 +12,17 @@ margin-top: 20px;
 border-radius: 5px;
     box-shadow: inset -6px -6px -12px, inset 6px 6px 12px lightgray;
 max-height: 400px;
+
+       /* @media (max-width:720px) {
+         width: 80%;
+         margin: 0 auto;
+        }
+               @media (max-width:565px) {
+                  width: 100%;
+        } */
+      
 `
+
  export const ProjectContent = styled.div`
   position: absolute;
   left: 0;
@@ -50,6 +60,12 @@ export const ImageWrapper = styled.div`
     height: 150px;
     border-radius: 5px;
      
+       @media (max-width:720px) {
+          height: 250px;
+        }
+                       @media (max-width:565px) {
+                        height: 150px;
+        }
 `
 
  export const  IconWrapper = styled.div`
@@ -182,3 +198,5 @@ export const ImageWrapper = styled.div`
               font-size: 10px;
        `
        export const Icons = styled.div``
+
+     

@@ -9,6 +9,7 @@ background-position: center center;
 background-repeat: no-repeat;
 position: relative;
 position: relative;
+    margin-top: 80px;
 `
 export const Background = styled.div`
     width: 100%;
@@ -27,6 +28,16 @@ export const Wrapper = styled.div`
     padding: 30px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 780px) {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+        @media (max-width: 650px) {
+        width: 100%;
+             padding: 5px;
+             text-align: center;
+    }
 `
  export const VideoContainer = styled.div`
  width: 100%;

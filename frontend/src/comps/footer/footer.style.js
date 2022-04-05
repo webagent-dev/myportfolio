@@ -24,6 +24,7 @@ margin: 0 auto;
 
     @media (max-width:670px){
       width: 100%;
+      gap: .5rem;
     }
    `
      export const Header = styled.h2`
@@ -32,8 +33,10 @@ margin: 0 auto;
     font-family: 'Rowdies', cursive;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer; 
-        @media (max-width:670px){
+
+        @media(max-width:670px){
          padding: 0px;
          font-size: 10px;
     }
@@ -43,6 +46,7 @@ width: 100%;
 height: 100%;
 flex: 1;
 flex-wrap: wrap;
+
 `
 export const SecondContainer = styled.div`
 height: 100%;
@@ -84,7 +88,7 @@ color: skyblue;
       font-weight: 700;
       cursor: pointer;
           @media (max-width:670px){
-            font-size: 10px;
+            font-size: 8px;
               font-weight: 700;
     }
  `
@@ -98,7 +102,7 @@ color: skyblue;
         font-weight: 700;
         cursor: pointer;
           @media (max-width:670px){
-            font-size: 10px;
+            font-size: 8px;
             font-weight: 700;
     }
  `
@@ -119,5 +123,8 @@ color: skyblue;
    font-family: 'Mukta', sans-serif;
     font-size: 15px;
     font-weight: 700;
+            @media (max-width:670px){
+            font-size: 10px;
+    }
  `
 

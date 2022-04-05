@@ -5,6 +5,7 @@ import Tippy from '@tippyjs/react'
 import { FaAngleDoubleLeft } from 'react-icons/fa'
 import 'tippy.js/dist/tippy.css'
 import { tech } from '../../data'
+import { Flip, Bounce } from 'react-reveal'
 const category = [ ...new Set(tech.map((item) => item.category))]
 function Skill() {
     const [ items, setItems ] = useState([])
@@ -16,6 +17,7 @@ function Skill() {
   return (
     <Container>
     <Wrapper>
+        <Flip right>
         <BtnWrapper>
             {
                 category.map((cat, i) =>(
@@ -28,14 +30,18 @@ function Skill() {
             {
                 !items || !items.length ? 
                 <>
+                   <Bounce right>
                     <Click>
                         <Icon> <FaAngleDoubleLeft /> </Icon>
                         <Small>Click me</Small>
                     </Click>
+                    </Bounce>
                     </>
                 : 
                 items?.map((item) => { 
+                         
                     return (
+                          <Flip>
                         <>
                         <Tippy content={<Content>
                                 <Title>{item.name}</Title>
@@ -46,11 +52,12 @@ function Skill() {
                         <Name>{item.name}</Name>
                   </ImageWrapper>
       </Tippy>
-               </>
-                    )
-                })
+               </>      </Flip> )
+                }
+                 )
             }
         </MainContainer>
+        </Flip>
     </Wrapper>
     </Container>
   )

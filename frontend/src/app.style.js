@@ -16,5 +16,5 @@ export const GlobalStyle = createGlobalStyle`
 export const AppContainer = styled.div`
     width: 100vw;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden ;
 `

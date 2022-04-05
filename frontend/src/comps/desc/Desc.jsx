@@ -3,6 +3,7 @@ import React from 'react';
 import  { DescContainer,Title,Small,  Wrapper,HeaderWrapper, HeaderWrappers, Header, ItemWrapper,
    ImageWrapper, Image, TextWrapper, Other, Descs } from './desc.style'
 import { desc } from '../../data'
+import { Bounce } from 'react-reveal'
 function Desc() {
   return (
       <DescContainer>
@@ -13,6 +14,7 @@ function Desc() {
         </Header>
       </HeaderWrapper>
     <Wrapper>
+      <Bounce>
     {
     desc.map((item, i) => (
         <ItemWrapper key={i}>
@@ -34,6 +36,7 @@ function Desc() {
         </ItemWrapper>
       ))
     }
+    </Bounce>
      </Wrapper>
       <HeaderWrappers>
         <Header>

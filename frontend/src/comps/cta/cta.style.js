@@ -7,6 +7,7 @@ export const CtaContainer  = styled.div`
  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('/android-chrome-512x512.png');
 display: flex;
 position: relative;
+overflow: hidden;
 
    animation: app 5s linear infinite alternate;
 

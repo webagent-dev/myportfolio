@@ -7,6 +7,10 @@ width: 100%;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+              @media (max-width:465px) {
+                gap: .5rem;
+                padding: 10px;
+        }
 `
  export const Btn = styled.button`
     padding: 10px 25px;
@@ -29,4 +33,12 @@ width: 100%;
         color: white;
         border-radius: 5px;
     }
+                @media (max-width:645px) {
+            font-size: 12px;
+               padding: 8px 15px;
+        }
+          @media (max-width:465px) {
+            font-size: 8px;
+               padding: 5px 10px;
+        }
  `

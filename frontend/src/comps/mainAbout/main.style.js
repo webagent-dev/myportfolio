@@ -3,10 +3,8 @@ import styled from 'styled-components'
 export const MainContainer = styled.div`
     width: 100%;
     height: 100vh;
-    /* padding: 100px;
-    padding-left: 0; */
     display: flex;
-    overflow: none;
+    overflow:hidden;
     background: whitesmoke;
          @media(max-width: 480px){
       height: auto;
@@ -53,7 +51,7 @@ export const Resume = styled.button`
         transform: scale(1.2);
       }
 `
-export const Icon = styled.div`
+export const Icon = styled.a`
   background: whitesmoke;
   padding: 2px  5px;
      backdrop-filter: blur(10px);

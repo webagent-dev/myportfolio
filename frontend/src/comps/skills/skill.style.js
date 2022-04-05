@@ -62,7 +62,7 @@ padding: 10px;
   export const ImageWrapper = styled.div`
     width: 100px;
     height: 100px;
-    background: green;
+    background: lightgreen;
     padding: 10px;
     position: relative;
     border-radius: 50%;
@@ -102,7 +102,7 @@ padding: 10px;
   `
   export const Name = styled.div`
     position: absolute;
-    color: darkgray;
+    color: green;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;

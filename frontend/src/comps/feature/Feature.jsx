@@ -1,10 +1,12 @@
 import React from 'react'
 import { FeatureContainer, Wrapper, Card, Image, Cardcontent, Title, Text } from './feature.style'
+import { Zoom } from 'react-reveal'
 import { card } from '../../data' 
 function Feature() {
   return (
     <FeatureContainer>
         <Wrapper>
+               <Zoom left >
     {
       card.map((item, i) => 
       (
@@ -18,6 +20,7 @@ function Feature() {
       )
       )
     }
+      </Zoom>
         </Wrapper>
     </FeatureContainer>
   )

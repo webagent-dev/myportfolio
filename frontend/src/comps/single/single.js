@@ -1,7 +1,9 @@
 import React from 'react'
 import { SingleContainer,  Background, Wrapper,VideoContainer, RateContainer,Rate, Icon,Num, Title,Name,TechContainer,Tech,Desc, FuntContainer,List, Underline, Div } from './single.style'
+import { Fade } from 'react-reveal'
 function Single() {
   return (
+    <Fade>
     <SingleContainer>
       <Background>
         <Wrapper>
@@ -74,6 +76,7 @@ function Single() {
       </Background>
 
       </SingleContainer>
+      </Fade>
   )
 }
 

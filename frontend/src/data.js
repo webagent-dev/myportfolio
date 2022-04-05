@@ -351,15 +351,15 @@ export const cta = [
         title: [
             {
             text: 'View My Project',
-            link: ''
+            link: '/my_project'
             },
               {
             text: 'about me',
-            link: ''
+            link: '/about_me'
             },
               {
             text: 'hire me',
-            link: ''
+            link: '/my_contact'
             }
         ],
         msg: ''
@@ -369,15 +369,16 @@ export const cta = [
         title: [
             {
             text: 'contact me',
-            link: ''
+        link: '/my_contact'
             },
               {
             text: 'my resume',
-            link: ''
+            link: '/my_resume'
             },
               {
             text: 'My GitHub',
-            link: ''
+            link: '/about_me',
+            a: 'https://github.com/webagent-dev'
             }
         ],
         msg: ''

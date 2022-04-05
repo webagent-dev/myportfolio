@@ -1,7 +1,9 @@
 import React from 'react'
 import { FooterContainer, MainWrapper, Wrapper,  FirstContainer, SecondContainer, ThirdContainer, Logo, Social, Link,Underline, Foot, Text, Header } from './footer.style'
+import { Slide,Bounce } from 'react-reveal'
 function Footer() {
   return (
+    <Bounce bottom>
     <FooterContainer>
       <MainWrapper>
       < FirstContainer>
@@ -46,6 +48,7 @@ function Footer() {
         <Foot>© Copyright  {new Date().getFullYear()}</Foot>
         <Text>Proudly Created By Webagent-Dev</Text>
      </FooterContainer>
+     </Bounce>
   )
 }
 

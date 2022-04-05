@@ -2,8 +2,9 @@ import React,{ useState, useContext } from 'react';
 import { FaTimes} from 'react-icons/fa'
 import { Close,ToggleWrapper, Logo, Profile, Button, Mode,On, List, Nav, Li, Title, Drop,Text,Hidden,Div} from './toggle.style'
 import { FcPortraitMode,FcList, FcContacts,FcInfo, FcRight, FcExpand, FcCollapse,FcSettings,FcSupport} from 'react-icons/fc'
-import Zoom from 'react-reveal'
+import {Bounce } from 'react-reveal'
 import { ThemeContext } from '../../context/ThemeContext'
+import { NavLink } from 'react-router-dom'
 function Toggle(props) {
   const [hide, setGetHide] = useState(false)
   const [service, setService] = useState(false)
@@ -15,45 +16,30 @@ function Toggle(props) {
     dispatch({type: 'Toggle'})
     props.getToggle(false)
   }
-  return <div>
+  return(
+  <Bounce>
+   <div>
     <Close  onClick={() => props.getToggle(false)}>
       <FaTimes  size='30px' color='coral' />
       </Close>
       <ToggleWrapper mode={changeMode}>
                  <Logo>
+                   <NavLink to='/'>
                 <h1>Webagent-dev</h1>
+                </NavLink>
              </Logo>
              <Profile>
-               <Button dark={changeMode} >Register</Button>
-               <Button dark={changeMode} >Login</Button>
+               {/* <Button dark={changeMode} >Register</Button>
+               <Button dark={changeMode} >Login</Button> */}
              </Profile>
       </ToggleWrapper>
       <List mode={changeMode}>
-  <Nav>
+  {/* <Nav>
       <Li onClick={() =>setGetHide(!hide) } >
-        <Div>
-        <FcSettings size='25px' />
-           <Title>Profile</Title>
-                </Div>
          { hide ? <FcCollapse size='25px' /> :  <FcExpand size='25px' /> }
     
   </Li>
-  { hide &&
-     <Hidden>
-       <Zoom left>
-           <Drop>
-                 <Text>LogOut</Text>
-                   </Drop>
-                     <Drop>
-      <Text>Edit Profile</Text>
-        </Drop>
-            <Drop>
-      <Text>Delete Profile</Text>
-           </Drop>
-           </Zoom>
-           </Hidden>
-           }
-</Nav>
+</Nav> */}
   <Nav>
       <Li onClick={() =>setService(!service) }>
         <Div>
@@ -65,7 +51,7 @@ function Toggle(props) {
 {
   service &&
      <Hidden>
-       <Zoom left>
+       {/* <Zoom left> */}
            <Drop onClick={() => handleDrop()}>
                  <Text>Toggle{ !changeMode ? ' Dark' : ' Light' } Mode</Text>
                    </Drop>
@@ -77,11 +63,11 @@ function Toggle(props) {
 {
   email &&
      <Hidden>
-       <Zoom left>
+       {/* <Zoom left> */}
            <Drop>
                  <Text>Webagent24@gmail.com</Text>
                    </Drop>
-                   </Zoom>
+                   {/* </Zoom> */}
            </Hidden>
 }
 </Nav>
@@ -92,18 +78,19 @@ function Toggle(props) {
   </Li>
   { phone && 
      <Hidden>
-       <Zoom left>
+       {/* <Zoom left> */}
            <Drop>
                  <Text>09035765646</Text>
                    </Drop>
-                   </Zoom>
+                   {/* </Zoom> */}
            </Hidden>
 }
 </Nav>
-      </Zoom>
+      {/* // </Zoom> */}
            </Hidden>
            }
 </Nav>
+   <NavLink to='/about_me'>
       <Li  onClick={() => props.getToggle(false)}>
           <Div>
               <FcPortraitMode size='25px'/>
@@ -111,6 +98,8 @@ function Toggle(props) {
              </Div>
            <FcRight size='25px' />
   </Li>
+  </NavLink>
+     <NavLink to='/my_project'>
         <Li  onClick={() => props.getToggle(false)}>
             <Div>
                   <FcList size='25px'/>
@@ -118,6 +107,8 @@ function Toggle(props) {
              </Div>
            <FcRight  size='25px'/>
   </Li>
+  </NavLink >
+     <NavLink to='/my_contact'>
         <Li  onClick={() => props.getToggle(false)}>
             <Div>
           < FcContacts  size='25px'/>
@@ -125,6 +116,8 @@ function Toggle(props) {
              </Div>
            <FcRight size='25px' />
   </Li>
+  </NavLink>
+     <NavLink to='/my_resume'>
         <Li  onClick={() => props.getToggle(false)}>
             <Div>
                 <FcInfo size='25px'/>
@@ -132,8 +125,11 @@ function Toggle(props) {
              </Div>
            <FcRight  size='25px'/>
   </Li>
+  </NavLink>
       </List>
-  </div>;
+  </div>
+  </Bounce>
+  )
 }
 
 export default Toggle;

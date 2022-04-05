@@ -1,0 +1,215 @@
+/* ================================================================= */
+/* RESET */
+/* ================================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ccc;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ================================================================= */
+/* LAYOUT */
+/* ================================================================= */
+
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+}
+
+.column {
+  padding: 15px;
+}
+
+.column.left {
+  flex-basis: 30%;
+  border-right: 1px solid #ccc;
+}
+
+.column.right {
+  flex: 1;
+}
+
+/* ================================================================= */
+/* UTILS */
+/* ================================================================= */
+
+/* Horizontal line to mark where the A4 page ends */
+.page::after {
+  position: absolute;
+  /* top: 29.7cm; */
+  top: 33.7cm;
+  left: 0;
+  z-index: -1;
+  content: '';
+  height: 1px;
+  width: 100vw;
+  background-color: #000;
+}
+
+select {
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+/* Hide utils when printing or saving as pdf */
+@media print {
+  select,
+  .page::after {
+    display: none;
+  }
+}
+
+/* ================================================================= */
+/* REUSABLES */
+/* ================================================================= */
+
+section:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+h2,
+h3,
+h4 {
+  color: #111;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.55;
+}
+
+.sm-border-bottom {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3px;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* ================================================================= */
+/* DETAILS */
+/* ================================================================= */
+
+.details h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.details li {
+  display: flex;
+  align-items: center;
+}
+
+.details svg {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* ================================================================= */
+/* FULL NAME */
+/* ================================================================= */
+
+.full-name {
+  padding-bottom: 12.5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12.5px;
+}
+
+.full-name h1 {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ================================================================= */
+/* WORK EXPERIENCE */
+/* ================================================================= */
+
+.work-experience .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* ================================================================= */
+/* CERTIFICATES */
+/* ================================================================= */
+
+.certificates .provider {
+  font-weight: 400;
+}
+
+/* ================================================================= */
+/* EDUCATION */
+/* ================================================================= */
+
+.education .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media(max-width: 780px){
+  .page{
+    display: none;
+    height: auto;
+  }
+}

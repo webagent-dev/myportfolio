@@ -5,11 +5,35 @@ export const HeaderContainer  = styled.div`
     width: 100%;
     height: 80px;
     border-bottom: 2px solid whitesmoke;
-    position: relative;
     z-index: 99;
     background: white;
+    /* position: absolute;
+    top: 0; */
     
-.svg__wrapper{
+@media (max-width: 715px) {
+        position: fixed;
+        bottom: 0;
+     border-bottom: none;
+   border-top: 2px solid whitesmoke;
+  z-index: 99;
+  /* background: whitesmoke; */
+            color: black;
+}
+
+/* @media(max-width:450px){
+       margin-bottom: 1.5rem; 
+} */
+`
+ export const HeaderWrapper = styled.div`
+    width: 100%;
+        height: 80px;
+    padding: 20px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+ .svg__wrapper{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -31,32 +55,6 @@ export const HeaderContainer  = styled.div`
 .svg__wrapper .shape-fill {
     fill: lightgray;
 }
-@media (max-width: 715px) {
-
-        position: fixed;
-        bottom: 0;
-            border-bottom: none;
-            border-top: 2px solid whitesmoke;
-            z-index: 99;
-            background: whitesmoke;
-            color: black;
-}
-
-@media(max-width:450px){
-       margin-bottom: 1.5rem; 
-}
-`
- export const HeaderWrapper = styled.div`
-    width: 100%;
-        height: 80px;
-    padding: 20px;
-        display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-bottom: 0;
-    
  `
 export const Logo = styled.h2`
 font-family: 'Source Code Pro', monospace;

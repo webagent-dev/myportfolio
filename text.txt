@@ -4,6 +4,8 @@ font-family: 'Mukta', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Rowdies', cursive;
 
+import { Slid Bounce, Fade, Flip, LightSeed Reveal, Rotate, Slide, Zoom} from 'react-reveal'
+
 
   <div className="divider">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
