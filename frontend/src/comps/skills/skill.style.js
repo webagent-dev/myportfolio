@@ -113,6 +113,32 @@ padding: 10px;
     }
     
   `
-  export const Click = styled.div``
-  export const Small = styled.p``
+  export const Click = styled.div`
+    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+             @media (max-width: 958px){
+              display: none;
+
+    }`
+  export const ClickUp = styled.div`
+      display: flex;
+    align-items: center;
+    flex-direction: column;
+      gap: 1rem;
+      cursor: pointer;
+      opacity: 0;
+               @media (max-width: 958px){
+      opacity: 1;
+      z-index: 1;
+    }
+  `
+  export const Small = styled.p`
+    font-size: 18px;
+    color: skyblue;
+      min-width: 100%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  `
   export const Icon = styled.div``

@@ -49,7 +49,12 @@ export const HeaderContainer = styled.div`
         }
   `
   export const SelectContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   `
+   export const FirstSort = styled.div``
+   export const  SecondSort  = styled.div``
   export const Sort = styled.div`
     display: flex;
     width: 400px;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Wrapper, BtnWrapper, Btn, ImageWrapper, MainContainer, Content,  Image, 
-Title, Desc, Name, Click, Small,Icon} from './skill.style'
+Title, Desc, Name, Click, Small,Icon, ClickUp } from './skill.style'
 import Tippy from '@tippyjs/react'
 import { FaAngleDoubleLeft } from 'react-icons/fa'
 import 'tippy.js/dist/tippy.css'
@@ -32,9 +32,15 @@ function Skill() {
                 <>
                    <Bounce right>
                     <Click>
-                        <Icon> <FaAngleDoubleLeft /> </Icon>
+                        <Icon> <FaAngleDoubleLeft size='20px' color='skyblue' /></Icon>
                         <Small>Click me</Small>
                     </Click>
+                    </Bounce>
+                     <Bounce right>
+                    <ClickUp>
+                            <Icon> <FaAngleDoubleLeft size='20px' color='skyblue' /></Icon>
+                        <Small>Click me</Small>
+                    </ClickUp>
                     </Bounce>
                     </>
                 : 

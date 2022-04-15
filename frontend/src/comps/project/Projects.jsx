@@ -1,6 +1,6 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
 import { ProjectContainer, HeaderContainer, Header, Info, Wrapper, SelectContainer, SortHeader,
-EnableContainer, Container,Form, Input, Label, MyComment, Textarea, Submit } from './project'
+EnableContainer, Container,Form, Input, Label, MyComment, Textarea, Submit, FirstSort, SecondSort } from './project'
 import { BtnList, ProjectList } from '../../one'
 import { ThemeContext } from '../../context/ThemeContext'
 import { FaTimes} from 'react-icons/fa'
@@ -17,6 +17,12 @@ const options = [
     { value: 'jamstack', label: 'Jam-Stack' },
       { value: 'nodejs', label: 'Nodejs' },
         { value: 'nextjs', label: 'Nextjs' }
+]
+const experience = [
+  { value: 'beginner', label: 'beginner'},
+   { value: 'intermediate', label: 'intermediate'},
+      { value: 'advance', label: 'advance'},
+
 ]
 
 const mainStyle = {
@@ -58,13 +64,24 @@ function Projects({comment}) {
         </HeaderContainer>
         <Wrapper>
           <SelectContainer>
-            <SortHeader>Sort Tech</SortHeader>
+            <FirstSort>
+            <SortHeader>Sort By Stack</SortHeader>
                <Select 
                options={options}
               //  style={style.Select}
                 styles={mainStyle} 
                 placeholder='Select Stack'
                 />
+                  </FirstSort>
+                  <SecondSort>
+                   <SortHeader>Sort By Experience </SortHeader>
+               <Select 
+               options={experience}
+              //  style={style.Select}
+                styles={mainStyle} 
+                placeholder='Select Experience'
+                />
+                </SecondSort>
           </SelectContainer>
             <BtnList btn={filterBtn}  filter={filterProject} />
             <ProjectList project={project} comment={setEnable} focus={getFocus}/>
