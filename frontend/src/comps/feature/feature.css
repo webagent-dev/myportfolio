@@ -1,0 +1,26 @@
+ .stacked{
+ display: grid;
+ }
+ .stacked > * {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+ }
+ /* .wrapper:first-child{
+    grid-row: span 2;
+    grid-column: span 2;
+ }
+  .wrapper:first-child > img { 
+    aspect-ratio: 1 /1.15;
+    object-fit: cover;
+ } */
+
+ @media(min-width:570px){
+     .wrapper:first-child{
+    grid-row: span 2;
+    grid-column: span 2;
+ }
+  .wrapper:first-child > img { 
+    aspect-ratio: 1 /1.15;
+    object-fit: cover;
+ }
+ }
