@@ -10,6 +10,13 @@ const ProjectSchema = new mongoose.Schema({
     tech: { type: 'Array', require: true},
      desc: { type: 'string', require: true},
     details: { type: 'Array', require: true},
+    comment: [
+        {
+            name: { type: 'string', require: true},
+            text: { type: 'string', require: true},
+            imageUrl: { type: 'string', require: true}
+        }
+    ]
 
 },{timestamp: true})
 
