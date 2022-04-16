@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-
-
+import {  Form, Field } from 'formik'
 export const ProjectContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -117,7 +116,7 @@ export const SortHeader = styled.h1`
         }
        `
       //  export const  Headers = styled.div``
-       export const  Form = styled.form`
+       export const  FormControl = styled(Form)`
        width: 80%;
        margin: 0 auto;
         /* border:2px solid  lightgray; */
@@ -140,7 +139,7 @@ export const SortHeader = styled.h1`
             color: skyblue;
             padding: 5px 0px;
         `
-         export const  Input = styled.input`
+         export const  Input = styled(Field)`
           width: 80%;
           padding: 10px 20px;
           border: none;
@@ -156,7 +155,7 @@ export const SortHeader = styled.h1`
             
         }
          `
-         export const Textarea = styled.textarea`
+         export const Textarea = styled(Field)`
           max-width: 80%;
              min-width: 80%;
           max-height: 200px;

@@ -1,14 +1,13 @@
 const nodemailer = require('nodemailer');
-const mailGun = require('nodemailer-mailgun-transport')
 
-const auth = {
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
     auth: {
-        api_key: '',
-        domain: ''
+        user: 'webagent24@gmail.com',
+        pass: ''
     }
-}
+})
 
-const transporter = nodemailer.createTransporter(mailGun(auth))
 
 const sendEmail = (email, subject, text, cb) => {
     const mailOptions ={

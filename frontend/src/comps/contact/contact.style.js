@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Form, Field  } from 'formik'
 
 export const Container = styled.div`
     width: 100%;
@@ -102,7 +103,7 @@ font-family: 'Mukta', sans-serif;
             margin-top: 5px;
     }
    `
-   export const    Form = styled.form`
+   export const   FormControl = styled(Form)`
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -114,7 +115,7 @@ font-family: 'Mukta', sans-serif;
       gap: 2rem;
       align-items: center;
     ` 
-     export const   Input = styled.input`
+     export const   Input = styled(Field)`
       width: 300px;
       height:70px;
       border: none;
@@ -137,7 +138,7 @@ font-family: 'Mukta', sans-serif;
         align-items: center;
     
       ` 
-      export const   Textarea = styled.textarea`
+      export const   Textarea = styled(Field)`
       width: 280px;
         min-width: 280px;
         max-width: 280px;

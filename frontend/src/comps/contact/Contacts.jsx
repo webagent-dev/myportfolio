@@ -1,8 +1,34 @@
 import React from 'react'
-import {  Container, HeaderContainer, Span, Header, Wrapper, SideOne,Big, Detail, Icon,Other, SideTwo, Form, First, Input, Second, Textarea, Submit, Small, Note} from './contact.style'
+import {  Container, HeaderContainer, Span, Header, Wrapper, SideOne,Big, Detail, Icon,Other, SideTwo, FormControl, First, Input, Second, Textarea, Submit, Small, Note} from './contact.style'
 import { FcBusinessContact,FcCallback, FcFeedback, FcInvite, FcMindMap } from "react-icons/fc";
 import { Flip, Zoom, LightSpeed } from 'react-reveal'
+import { Formik  } from 'formik'
 function Contacts() {
+  const initialValues ={
+    name: '',
+    email: '',
+    subject: '',
+    comment: '',
+  }
+  const onSubmit = values => {
+    console.log('this our email value', values)
+  }
+  const validateSchema = value =>  {
+    let errors = {}
+    if(!value.name){
+      errors.name = 'please enter a name'
+    }
+      if(!value.email){
+       errors.email = 'please enter a valid email'
+    }
+      if(!value.subject){
+      errors.subject = 'please enter a valid value'
+    }
+      if(!value.text){
+      errors.text = 'please enter a valid value'
+    }
+    return errors
+  }
   return (
     <Container>
       <Flip>
@@ -42,17 +68,42 @@ function Contacts() {
     <Zoom>
     <SideTwo>
       <Note>Message Me </Note>
-    <Form>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={onSubmit}
+        validateSchema={validateSchema}
+      >
+    <FormControl>
         <First>
-            <Input   placeholder="your name" type='text' id='name'/>
-              <Input  placeholder="your email"  type='email' id='email'/>
-                <Input  placeholder="subject"  type='text' id='subject'/>
+            <Input  type='text'  
+            placeholder="your name" 
+            name='name'
+             id='name'
+             />
+              <Input
+               placeholder="your email"  
+               type='email'
+                id='email'
+                name='email'
+                />
+                <Input   type='text'  
+                placeholder="subject" 
+                name='subject'
+                 id='subject'
+                 />
         </First>
         <Second>
-            <Textarea  placeholder="your message" id='message'/>
+            <Textarea  
+            as='textarea'
+              placeholder="your message"
+                  name='comment'
+               id='comment' 
+           
+               />
             <Submit type='submit' >Send</Submit>
         </Second>
-    </Form>
+    </FormControl>
+</Formik>
     </SideTwo>
     </Zoom>
 </Wrapper>

@@ -1,12 +1,12 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
 import { ProjectContainer, HeaderContainer, Header, Info, Wrapper, SelectContainer, SortHeader,
-EnableContainer, Container,Form, Input, Label, MyComment, Textarea, Submit, FirstSort, SecondSort } from './project'
+EnableContainer, Container,FormControl, Input, Label, MyComment, Textarea, Submit, FirstSort, SecondSort } from './project'
 import { BtnList, ProjectList } from '../../one'
 import { ThemeContext } from '../../context/ThemeContext'
 import { FaTimes} from 'react-icons/fa'
 import { Bounce } from 'react-reveal'
 import FileBase64 from 'react-file-base64'
-import { useFormik } from 'formik'
+import { Formik, ErrorMessage  } from 'formik'
 import { port } from '../../data'
 import Select from 'react-select'
 const filterBtn = ['all', ...new Set(port.map((item) => item.category))]
@@ -19,16 +19,16 @@ const options = [
         { value: 'nextjs', label: 'Nextjs' }
 ]
 const experience = [
-  { value: 'beginner', label: 'beginner'},
-   { value: 'intermediate', label: 'intermediate'},
-      { value: 'advance', label: 'advance'},
+  { value: 'beginner', label: 'Beginner'},
+   { value: 'intermediate', label: 'Intermediate'},
+      { value: 'advance', label: 'Advance'},
 
 ]
 
 const mainStyle = {
-  select: styles => ({...styles,   fontSize: "20px",textTransform: "uppercase",backgroundColor:'white', 
+  select: styles => ({...styles,   fontSize: "20px",textTransform: "capitalize",backgroundColor:'white', 
   color: 'skyblue'}),
-  control: styles => ({...styles, backgroundColor: 'skyblue',}),
+  control: styles => ({...styles, backgroundColor: 'whitesmoke',}),
   option: styles => ({...styles,  fontFamily: " 'Source Code Pro', monospace", textTransform: "uppercase",  fontSize: '15px',  padding: "12px  24px", cursor: "pointer"})
 }
 
@@ -37,13 +37,30 @@ function Projects({comment}) {
   const [enable, setEnable ] = useState(false)
   const [image, setImage ] = useState('')
   const [project, setProject ] = useState(port)
+  const [tech, setTech ] = useState({})
   const getFocus = useRef()
-  const formik = useFormik({
-      initialValues:{
-        name: '',
-        comment: ''
+    const   initialValues = {
+           name: '',
+          comment: ''
       }
-  })
+      // const validateSchema = Yap.object({
+      //     name: Yap.string().require('Pleaase Enter Your Full-Name'),
+      //     comment: Yap.string().require('Pleaase Say Your Opinion')
+      // })
+      const validateSchema = values => {
+        let error = {}
+        if(!values.name){
+          error.name = 'please enter your name'
+        }
+           if(!values.commit){
+          error.name = 'please enter your opinion'
+        }
+        return error
+      }
+      const onSubmit = values  => {
+          console.log('comment-date-value', values)
+          // values && setEnable(false)
+      }
   const filterProject = (cat) => {
   if(cat === 'all'){
       setProject(port)
@@ -53,6 +70,17 @@ function Projects({comment}) {
   setProject(newProject)
   console.log(newProject)
 }
+  const customTheme = theme => {
+    console.assert(theme)
+   return {
+     ...theme,
+     colors: {
+       ...theme.colors,
+       primary25: 'orange',
+       primary: 'skyblue'
+     }
+   }
+  }
   return (
     <Bounce>
     <ProjectContainer>
@@ -68,18 +96,28 @@ function Projects({comment}) {
             <SortHeader>Sort By Stack</SortHeader>
                <Select 
                options={options}
-              //  style={style.Select}
+              theme={customTheme}
+               isSearchable
                 styles={mainStyle} 
                 placeholder='Select Stack'
+                onChange={setTech}
+                        noOptionsMessage={() => 'please select a value'}
+                  autoFocus
+                  autoComplete
                 />
                   </FirstSort>
                   <SecondSort>
                    <SortHeader>Sort By Experience </SortHeader>
                <Select 
                options={experience}
-              //  style={style.Select}
-                styles={mainStyle} 
+                  theme={customTheme}
+               isSearchable
+               styles={mainStyle} 
                 placeholder='Select Experience'
+                  onChange={setTech}
+                  noOptionsMessage={() => 'please select a value'}
+                  autoFocus
+                  autoComplete
                 />
                 </SecondSort>
           </SelectContainer>
@@ -88,25 +126,43 @@ function Projects({comment}) {
         </Wrapper>
         {
              enable && (
-        <EnableContainer onClick={() => setEnable(false)}>
+        <EnableContainer>
+          <Formik 
+          initialValues={initialValues}
+          onSubmit={onSubmit}
+          validateSchema={validateSchema}
+          >
           <Container>
                   <Bounce>
             <Header>{'Comment  On This Project'}</Header>
-            <Form>
-              <Label>Full Name</Label>
-              <Input  ref={getFocus} />
-                   <Label>Your Opinion</Label>
-              <Textarea />
+              <FormControl>
+              <Label htmlFor='name'>Full Name</Label>
+              <Input  
+              type='text'
+              name='name'
+              id='name'
+              placeholder='Enter Your Full-Name'
+              />
+              <ErrorMessage  name='name'/>
+                   <Label htmlFor='commit'>Your Opinion</Label>
+              <Textarea 
+              as='textarea'
+              name='comment'
+              id='commit'
+                placeholder='Enter Your Commit'
+              />
+              <ErrorMessage name='comment' />
                    <Label>Your Image</Label>
               <FileBase64 
                 multiple={false}
                 onDone={({base64}) => setImage(base64)}
               />
               <Submit type='submit'> Commit </Submit>
-            </Form>
+         </FormControl>
             <MyComment>Thanks for your comment </MyComment>
                    </Bounce>
           </Container>
+              </Formik>
         </EnableContainer>
            
       )   

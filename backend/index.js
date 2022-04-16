@@ -29,7 +29,7 @@ app.post('/send_mail',(req, res) => {
 // Start fUNCTION
 const start = async () => {
     try{
-        await connectToDb('mongodb://localhost/port');
+        await connectToDb(process.env.MONGO_URL);
         app.listen(PORT, () => console.log(logger))
     }catch(err){
         console.log(err)
