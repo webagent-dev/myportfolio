@@ -5,7 +5,7 @@ import { SiExpress,SiSlack } from 'react-icons/si'
 import { GrReactjs, GrFacebook,GrLinkedin } from 'react-icons/gr'
 import Zoom from 'react-reveal'
 import { LandContainer,  Title, LandDesc, Social, Icon, MoveContainer, Image1,
- Image2, Image3, Image4, Image5,  Image6,  Image7,  Image8, Text, Slide,Span, Loading} from './land.style'
+ Image2, Image3, Image4, Image5,  Image6,  Image7,  Image8, Text, Slide,Span, Loading, Small} from './land.style'
 import { useSpring, animated, config  } from 'react-spring'
 const calc = (x, y) => [- (y -window.innerHeight) / 2 / 20, (x - window.innerWidth / 2) / 20, 1]
 const trans = (x, y, s, ) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
@@ -54,6 +54,9 @@ function Land() {
         <Zoom bottom>
 <Title>Welcome To  WEBAGENT-DEV Page</Title>
 <LandDesc>Am  a <Span text='darkgreen'>M</Span>  <Span  text='orange'>E</Span>  <Span  text='blue' >R</Span>  <Span  text='green'>N</Span> web and mobile Developer</LandDesc>
+<Small>I can  develop websites that ignite your business.” </Small> 
+<Small>That tells visitors who you are and what you can
+offer them in a better way.</Small>
 <Slide>
     <Text text='darkgreen'> <DiMongodb  size='30px'/> MongoDB</Text>
     <Text   text='orange'> <SiExpress  size='30px'/> Express</Text>

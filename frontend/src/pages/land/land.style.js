@@ -276,3 +276,12 @@ text-align: center;
                 font-size: 1rem;  
     }
 `
+export const Small = styled.small`
+display: block;
+padding: 5px 15px;
+color: skyblue;
+font-family: 'Alfa Slab One', cursive;
+text-align: center;
+font-size: 20px
+font-weight: 500;
+`
