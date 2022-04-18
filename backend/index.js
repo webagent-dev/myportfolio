@@ -13,6 +13,9 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 // Routers 
+app.get('/', (req,res) => {
+    res.status(200).json('welcome to my home page')
+})
 app.use('/project', projectRouter)
 //  Send mail route
 app.post('/send_mail',(req, res) => {
