@@ -100,7 +100,7 @@ export const SortHeader = styled.h1`
          align-items: center;
          justify-content: center;
       `
-       export const  Container = styled.div`
+       export const  Container = styled(Form)`
         width: 70%;
         height: 600px;
         margin: 0 auto;

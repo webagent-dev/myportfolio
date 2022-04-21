@@ -2,6 +2,7 @@ import React from 'react'
 import {  Container, HeaderContainer, Span, Header, Wrapper, SideOne,Big, Detail, Icon,Other, SideTwo, FormControl, First, Input, Second, Textarea, Submit, Small, Note} from './contact.style'
 import { FcBusinessContact,FcCallback, FcFeedback, FcInvite, FcMindMap } from "react-icons/fc";
 import { Flip, Zoom, LightSpeed } from 'react-reveal'
+import FormikContainer  from './FormikContainer'
 import { Formik  } from 'formik'
 function Contacts() {
   const initialValues ={
@@ -68,42 +69,7 @@ function Contacts() {
     <Zoom>
     <SideTwo>
       <Note>Message Me </Note>
-      <Formik
-        initialValues={initialValues}
-        onSubmit={onSubmit}
-        validateSchema={validateSchema}
-      >
-    <FormControl>
-        <First>
-            <Input  type='text'  
-            placeholder="your name" 
-            name='name'
-             id='name'
-             />
-              <Input
-               placeholder="your email"  
-               type='email'
-                id='email'
-                name='email'
-                />
-                <Input   type='text'  
-                placeholder="subject" 
-                name='subject'
-                 id='subject'
-                 />
-        </First>
-        <Second>
-            <Textarea  
-            as='textarea'
-              placeholder="your message"
-                  name='comment'
-               id='comment' 
-           
-               />
-            <Submit type='submit' >Send</Submit>
-        </Second>
-    </FormControl>
-</Formik>
+     <FormikContainer />
     </SideTwo>
     </Zoom>
 </Wrapper>

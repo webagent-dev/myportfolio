@@ -26,3 +26,74 @@ import { Slid Bounce, Fade, Flip, LightSeed Reveal, Rotate, Slide, Zoom} from 'r
                   </Other>
                 </TextWrapper>
      <ItemWrapper />
+
+      //**************   contact form refactoring ******* //
+        <FormControl>
+        <First>
+            <Input  type='text'  
+            placeholder="your name" 
+            name='name'
+             id='name'
+             />
+              <Input
+               placeholder="your email"  
+               type='email'
+                id='email'
+                name='email'
+                />
+                <Input   type='text'  
+                placeholder="subject" 
+                name='subject'
+                 id='subject'
+                 />
+        </First>
+        <Second>
+            <Textarea  
+            as='textarea'
+              placeholder="your message"
+                  name='comment'
+               id='comment' 
+           
+               />
+            <Submit type='submit' >Send</Submit>
+        </Second>
+    </FormControl>
+
+   //********** initial Project commet do ***** //
+
+      <Formik 
+          initialValues={initialValues}
+          onSubmit={onSubmit}
+          validateSchema={validateSchema}
+          >
+          <Container>
+                  <Bounce>
+            <Header>{'Comment  On This Project'}</Header>
+              <FormControl>
+              <Label htmlFor='name'>Full Name</Label>
+              <Input  
+              type='text'
+              name='name'
+              id='name'
+              placeholder='Enter Your Full-Name'
+              />
+              <ErrorMessage  name='name'/>
+                   <Label htmlFor='commit'>Your Opinion</Label>
+              <Textarea 
+              as='textarea'
+              name='comment'
+              id='commit'
+                placeholder='Enter Your Commit'
+              />
+              <ErrorMessage name='comment' />
+                   <Label>Your Image</Label>
+              <FileBase64 
+                multiple={false}
+                onDone={({base64}) => setImage(base64)}
+              />
+              <Submit type='submit'> Commit </Submit>
+         </FormControl>
+            <MyComment>Thanks for your comment </MyComment>
+                   </Bounce>
+          </Container>
+              </Formik>
