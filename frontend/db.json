@@ -1,0 +1,381 @@
+{
+   "slider":[
+      {
+         "id":1,
+         "image":"/public/assets/img/myport-react-icon.png",
+         "title":"React Library ",
+         "text":"A Javascript  Libery  for a View "
+      },
+      {
+         "id":2,
+         "image":"/public/assets/img/myport-css-icon.png",
+         "title":"CSS",
+         "text":"it is use to syle our component"
+      },
+      {
+         "id":3,
+         "image":"/public/assets/img/myport-material-icon.png",
+         "title":"Metarial-Ui",
+         "text":""
+      },
+      {
+         "id":4,
+         "image":"/public/assets/img/myport-node-icon.png",
+         "title":"Nodejs",
+         "text":"A  Javascript run time for server side"
+      },
+      {
+         " id":5,
+         " image":"/public/assets/img/myport-javascript-icon.png",
+         "title":"Javascript",
+         "text":"A Javascript"
+      },
+      {
+         " id":6,
+         " image":"/public/assets/img/myport-redux-icon.png",
+         "title":"Redux",
+         "text":"A React Global State Management"
+      },
+      {
+         "id":7,
+         "image":"/public/assets/img/myport-git-icon.png",
+         "title":"Git",
+         "text":"A Javascript"
+      },
+      {
+         "id":8,
+         "image":"/public/assets/img/myport-native-icon.png",
+         "title":"React-Native",
+         "text":"React Framework"
+      }
+   ],
+   "description":[
+         {
+             "id": 1,
+        "img":"/assets/img/react.png",
+        "title": "React",
+        "desc": "A JavaScript library for building user interfaces",
+        "other": " React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes",
+        "link": "https://reactjs.org"
+    },
+        {
+            "id": 2,
+    "img":"/assets/img/node.png",
+    "titl": "Node.js®",
+    "des": "is a JavaScript runtime built on Chromes V8 JavaScript engine.",
+    "othe": "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.",
+    "lin": "https://nodejs.org"
+    },
+            {
+                "id": 3,
+        "img":"/assets/img/next.png",
+        "title": "Nextjs®",
+        "desc": "As an asynchronous event-driven JavaScript runtime",
+        "other": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.",
+        "link": "https://nextjs.org"
+    }
+   ],
+   "card": [
+        {
+            "id": 1,
+        "img": "/public/assets/img/codelogo.jpg",
+        "title": "write clean and mantainable code",
+       "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+
+    },
+       {
+           "id": 2,
+        "img": "/public/assets/img/css-pic.png",
+        "title": "write clean and mantainable code",
+       "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+        
+    },
+       {
+           "id": 3,
+        "img": "/public/assets/img/ideas-pic.jpg",
+        "title": "write clean and mantainable code",
+       "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+        
+    },
+       {
+           "id": 4,
+        "img": "/public/assets/img/idea-pic.jpg",
+        "title": "write clean and mantainable code",
+       "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+        
+    },
+       {
+           "id": 5,
+        "img": "/public/assets/img/dev-1.png",
+        "title": "write clean and mantainable code",
+       "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+        
+    },
+       {
+           "id": 6,
+        "img": "/public/assets/img/design-pic.jpg",
+        "title": "write clean and mantainable code",
+     "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
+    }
+   ],
+   "dos":[
+         {
+        "id": 1,
+        "image": "/assets/img/mobile.png",
+        "title": "responsive Design",
+       " desc": " Am passionate for building a mobile and deskstop ultra responsive web application"
+    },
+        {
+            "id": 2,
+        "image": "/assets/img/api.jpg",
+        "title": "responsive Design",
+        "desc": "Am passionate for building a mobile and deskstop ultra responsive web application"
+    },
+        {
+            "id": 3,
+        "image": "/assets/img/auth.jpg",
+        "title": "responsive Design",
+        "desc": " am passionate for building a mobile and deskstop ultra responsive web application"
+    },
+        {
+            "id": 4,
+        "image": "/assets/img/bug.jpg",
+        "title": "responsive Design",
+        "desc": " am passionate for building a mobile and deskstop ultra responsive web application"
+    }
+   ],
+   "cta":[
+           {
+        "id": 1,
+        "title": [
+            {
+            "text": "View My Project",
+            "link": "/my_project"
+            },
+              {
+            "text": "about me",
+            "link": "/about_me"
+            },
+              {
+           " text": "hire me",
+            "link": "/my_contact"
+            }
+        ],
+        "msg": "the message"
+    },
+      {
+        "id": 2,
+        "title": [
+            {
+            "text": "contact me",
+        "link": "/my_contac"
+            },
+              {
+            "text": "my resume",
+            "link": "/my_resume"
+            },
+              {
+           " text": "My GitHub",
+            "link": "/about_me",
+            "a": "https://github.com/webagent-dev"
+            }
+        ],
+        "msg": " the message"
+    }
+   ],
+   "tech": [
+      {
+   "icon":"/public/assets/svg/javascript.svg",
+   "name":"javascript ",
+   "desc":"javascript is a web programming lamguage"
+},
+{
+   " id":2,
+   "category":"frontend",
+   "icon":"/public/assets/svg/css3.png",
+   " name":"css",
+   "desc":" a markup language for web development"
+},
+{
+   " id":3,
+   "category":"frontend",
+   " icon":"/public/assets/svg/react.svg",
+   "name":"reactjs",
+   "desc":"a frontend labery for quick development"
+},
+{
+   " id":4,
+   "category":"frontend",
+   "icon":"/public/assets/svg/redux.svg",
+   "name":"redux",
+   "desc":"a reactjs complex state management"
+},
+{
+   " id":5,
+   " category":"frontend",
+   " icon":"/public/assets/svg/sass.svg",
+   "name":"sass",
+   " desc":"a css framwork for writing advanced css"
+},
+{
+   " id":6,
+   "category":"frontend",
+   "icon":"/public/assets/svg/typescript.svg",
+   "name":"Typescripts",
+   "desc":" a javascript framework for writing type checking and debugging"
+},
+{
+   " id":7,
+   "category":"backend",
+   " icon":"/public/assets/svg/nodejs.svg",
+   " name":"nodejs",
+   " desc":"a javascript runtime to write server-side code"
+},
+{
+   "id":8,
+   "category":"backend",
+   "icon":"/assets/svg/express.svg",
+   " name":"express",
+   " desc":"nodejs framework to write easy server-side cod"
+},
+{
+   " id":9,
+   "category":"backend",
+   " icon":"/public/assets/svg/handlebars.svg",
+   "name":"handerbars",
+   "desc":"a server-side markup language"
+},
+{
+   " id":10,
+   "category":"tools",
+   "icon":"/public/assets/svg/github.svg",
+   "name":"github",
+   "desc":"a version control to manage projec"
+},
+{
+   " id":11,
+   "category":"tool",
+   "icon":"/public/assets/svg/visualstudio.s",
+   " name":"visual studio code",
+   " desc":" a code edito"
+},
+{
+   " id":12,
+   "category":"tool",
+   " icon":"/public/assets/svg/webpack.sv",
+   " name":"webpac",
+   " desc":"javascript bundler and compile"
+},
+{
+   " id":13,
+   "category":"tool",
+   "icon":"/public/assets/svg/yarn.sv",
+   "name":"yar",
+   "desc":"a package manage"
+},
+{
+   " id":14,
+   "category":"tools",
+   " icon":"/public/assets/svg/hosting.svg",
+   " name":"hosting",
+   "desc":"deployment and server file handler"
+},
+{
+   " id":15,
+   "category":"frontend",
+   " icon":"/public/assets/svg/html5.svg",
+   " name":"html5",
+   " desc":"a markup language"
+},
+{
+   "id":16,
+   "category":"frontend",
+   "icon":"/public/assets/svg/styled-components.svg",
+   "name":"styled-components",
+   "desc":"a reactjs tool for advance styling"
+},
+{
+   "  id":17,
+   "category":"frontend",
+   "icon":"/public/assets/svg/tailwind.png",
+   "name":"tailwind css",
+   "desc":"deployment and server file handler"
+},
+{
+   " id":18,
+   "category":"frontend",
+   "icon":"/public/assets/svg/material.png",
+   "name":"material-ui",
+   " desc":"deployment and server file handler"
+},
+{
+   " id":19,
+   "category":"frontend",
+   " icon":"/public/assets/svg/bootstrap.svg",
+   " name":"bootstrap",
+   " desc":"deployment and server file handler"
+},
+{
+   " id":20,
+   "category":"backend",
+   " icon":"dd/public/assets/svg/EJS.png",
+   "name":"EJS",
+   "desc":"deployment and server file handler"
+},
+{
+   " id":21,
+   "category":"backend",
+   " icon":"dd/public/assets/svg/jwt.png",
+   "name":"json web token",
+   "desc":"deployment and server file handler"
+},
+{
+   " id":22,
+   "category":"backend",
+   "icon":"dd/public/assets/svg/kbcrypt.png",
+   "name":"bcrypt",
+   " desc":"deployment and server file handler"
+},
+{
+   " id":23,
+   "category":"backend",
+   "icon":"dd/public/assets/svg/mongoose.svg",
+   "name":"mongoose",
+   "desc":"deployment and server file handler"
+},
+{
+   "id":24,
+   "category":"backend",
+   " icon":"/public/assets/svg/nodemon.png",
+   "name":"nodemon",
+   "desc":"deployment and server file handler"
+},
+{
+   "id":25,
+   "icon":"/public/assets/svg/nginx.svg",
+   "name":"nginx",
+   "desc":"deployment and server file handle"
+},
+{
+   "id":26,
+   "category":"tools",
+   "icon":"/public/assets/svg/cloud.jpg",
+   "name":"cloud computing",
+   "desc":"deployment and server file handler"
+},
+{
+   "id":27,
+   "category":"tools",
+   "icon":"/public/assets/svg/npm.svg",
+   " name":"npm",
+   " desc":"deployment and server file handler"
+},
+{
+   "id":28,
+   "category":"backend",
+   "icon":"/public/assets/svg/next.png",
+   "name":"nextjs",
+   "desc":"deployment and server file handler"
+}
+]
+}

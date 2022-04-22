@@ -3,8 +3,13 @@ import { Image, Text } from '../../one'
 import { slider } from '../../data'
 import { FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 import { SliderContainer, Sliders, Arrow} from './slider.style'
+import axios from 'axios'
 import { LightSpeed } from 'react-reveal'
+ import { useQuery } from 'react-query'
 function Slider() {
+  const {isLoading, data} = useQuery('get_slider', () => { 
+       axios.get('http://localhost:5000/slider')
+  })
   const [index, setIndex ] = useState(0)
 const handleSlider = useCallback((direction) => {
 if(direction === 'left'){
