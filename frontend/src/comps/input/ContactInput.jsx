@@ -1,21 +1,21 @@
 import React from 'react'
-import { ErrorMessage } from 'formik'
 import { Input } from '../contact/contact.style'
+import { ErrorMessage } from 'formik'
 import Error from '../error/Error'
 function ContactInput(props) {
-    const { label, name, ...rest } = props
+  const { name, label, ...rest} = props
   return (
-    <div>
-        <Input 
-        name={name}
-        id={name}
-        placeholder={label}
-        {...rest}
-        type='text'
-        />
-<ErrorMessage name={name} component={Error} />
-    </div>
+    <>
+      <Input
+      name={name}
+      placeholder={label}
+      id={name}
+      {...rest}
+       />
+       <ErrorMessage name={name} component={Error} />
+      </>
   )
 }
 
 export default ContactInput
+

@@ -3,33 +3,7 @@ import {  Container, HeaderContainer, Span, Header, Wrapper, SideOne,Big, Detail
 import { FcBusinessContact,FcCallback, FcFeedback, FcInvite, FcMindMap } from "react-icons/fc";
 import { Flip, Zoom, LightSpeed } from 'react-reveal'
 import FormikContainer  from './FormikContainer'
-import { Formik  } from 'formik'
 function Contacts() {
-  const initialValues ={
-    name: '',
-    email: '',
-    subject: '',
-    comment: '',
-  }
-  const onSubmit = values => {
-    console.log('this our email value', values)
-  }
-  const validateSchema = value =>  {
-    let errors = {}
-    if(!value.name){
-      errors.name = 'please enter a name'
-    }
-      if(!value.email){
-       errors.email = 'please enter a valid email'
-    }
-      if(!value.subject){
-      errors.subject = 'please enter a valid value'
-    }
-      if(!value.text){
-      errors.text = 'please enter a valid value'
-    }
-    return errors
-  }
   return (
     <Container>
       <Flip>
@@ -39,7 +13,6 @@ function Contacts() {
            Get in touch.Always available for <Small>freelancing</Small> <br /> if the right project comes along me</Span>
         </HeaderContainer>
         </Flip>
-     
 <Wrapper>
   <LightSpeed>
     <SideOne>
@@ -69,7 +42,7 @@ function Contacts() {
     <Zoom>
     <SideTwo>
       <Note>Message Me </Note>
-     <FormikContainer />
+        <FormikContainer />
     </SideTwo>
     </Zoom>
 </Wrapper>

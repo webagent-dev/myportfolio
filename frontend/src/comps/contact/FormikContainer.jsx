@@ -10,6 +10,7 @@ function FormikContainer() {
         name: '',
         subject: '',
         text: ''
+      
     }
     const onSubmit = (value, submitProps) => {
         console.log('input value', value)
@@ -30,41 +31,42 @@ function FormikContainer() {
         validateSchema={validateSchema}
     >
         {
-            props =>   <FormControl>
-        <First>
-             <FormikControl 
-              control='input'
+            props => (  
+                <FormControl>
+                     <First>
+                       <FormikControl 
+            control='input'
                 type='text'
-                name='name'
-                label='name'
-                id='name'
-             />
-             <FormikControl 
-                control='input'
+               name='name'
+              label='name'
+               id='name'
+         />
+               <FormikControl 
+            control='input'
                 type='email'
-                name='email'
-                label='email'
-                id='email'
-             />
-             <FormikControl 
-              control='input'
+               name='email'
+              label='email'
+               id='email'
+         />
+               <FormikControl 
+            control='input'
                 type='text'
-                name='subject'
-                label='subject'
-                id='subject'
-             />
-        </First>
-        <Second>
-               <FormikControl
-                 control='textarea'
+               name='subject'
+              label='subject'
+               id='subject'
+         />
+                     </First>
+                      <Second>
+                           <FormikControl 
+            control='textarea'
                 type='textarea'
-                name='text'
-                label='message'
-                id='text'
-               />
-            <Submit type='submit' >Send</Submit>
-        </Second>
-    </FormControl>
+               name='text'
+              label='message'
+         />
+                            <Submit type='submit' >Send</Submit>
+                      </Second>
+                </FormControl>
+    )
         }
 
     </Formik>
@@ -72,3 +74,40 @@ function FormikContainer() {
 }
 
 export default FormikContainer
+
+
+  //         <FormControl>
+    //     <First>
+    //          <FormikControl 
+    //           control='input'
+    //             type='text'
+    //             name='name'
+    //             label='name'
+    //             id='name'
+    //          />
+    //          <FormikControl 
+    //             control='input'
+    //             type='email'
+    //             name='email'
+    //             label='email'
+    //             id='email'
+    //          />
+    //          <FormikControl 
+    //           control='input'
+    //             type='text'
+    //             name='subject'
+    //             label='subject'
+    //             id='subject'
+    //          />
+    //     </First>
+    //     <Second>
+    //        <FormikControl
+    //              control='textarea'
+    //             type='textarea'
+    //             name='text'
+    //             label='message'
+    //             id='text'
+    //            />
+    //         <Submit type='submit' >Send</Submit>
+    //     </Second>
+    // </FormControl>
