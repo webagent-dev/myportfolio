@@ -2,9 +2,16 @@ import React from 'react';
 // import { Image, Text } from '../../one'
 import  { DescContainer,Title,Small,  Wrapper,HeaderWrapper, HeaderWrappers, Header, ItemWrapper,
    ImageWrapper, Image, TextWrapper, Other, Descs } from './desc.style'
-import { desc } from '../../data'
 import { Bounce } from 'react-reveal'
+import { useQuery } from 'react-query'
+import axios from 'axios'
 function Desc() {
+  const {isLoading, data, isFetching} = useQuery('get_desc', () => {
+      return axios.get('http://localhost:5000/description')
+  })
+  if(isLoading || isFetching){
+    return <h1>Loading...</h1>
+  }
   return (
       <DescContainer>
       <HeaderWrapper>
@@ -16,8 +23,8 @@ function Desc() {
     <Wrapper>
       <Bounce>
     {
-    desc.map((item, i) => (
-        <ItemWrapper key={i}>
+    data?.data.map((item) => (
+        <ItemWrapper key={item.id}>
               <ImageWrapper>
                   <Image  src={item.img} alt='img_desc' />
                 </ImageWrapper>

@@ -2,49 +2,49 @@
    "slider":[
       {
          "id":1,
-         "image":"/public/assets/img/myport-react-icon.png",
+         "image":"/assets/img/myport-react-icon.png",
          "title":"React Library ",
          "text":"A Javascript  Libery  for a View "
       },
       {
          "id":2,
-         "image":"/public/assets/img/myport-css-icon.png",
+         "image":"/assets/img/myport-css-icon.png",
          "title":"CSS",
          "text":"it is use to syle our component"
       },
       {
          "id":3,
-         "image":"/public/assets/img/myport-material-icon.png",
+         "image":"/assets/img/myport-material-icon.png",
          "title":"Metarial-Ui",
          "text":""
       },
       {
          "id":4,
-         "image":"/public/assets/img/myport-node-icon.png",
+         "image":"/assets/img/myport-node-icon.png",
          "title":"Nodejs",
          "text":"A  Javascript run time for server side"
       },
       {
          " id":5,
-         " image":"/public/assets/img/myport-javascript-icon.png",
+         " image":"/assets/img/myport-javascript-icon.png",
          "title":"Javascript",
          "text":"A Javascript"
       },
       {
          " id":6,
-         " image":"/public/assets/img/myport-redux-icon.png",
+         " image":"/assets/img/myport-redux-icon.png",
          "title":"Redux",
          "text":"A React Global State Management"
       },
       {
          "id":7,
-         "image":"/public/assets/img/myport-git-icon.png",
+         "image":"/assets/img/myport-git-icon.png",
          "title":"Git",
          "text":"A Javascript"
       },
       {
          "id":8,
-         "image":"/public/assets/img/myport-native-icon.png",
+         "image":"/assets/img/myport-native-icon.png",
          "title":"React-Native",
          "text":"React Framework"
       }
@@ -61,10 +61,10 @@
         {
             "id": 2,
     "img":"/assets/img/node.png",
-    "titl": "Node.js®",
-    "des": "is a JavaScript runtime built on Chromes V8 JavaScript engine.",
-    "othe": "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.",
-    "lin": "https://nodejs.org"
+    "title": "Node.js®",
+    "desc": "is a JavaScript runtime built on Chromes V8 JavaScript engine.",
+    "other": "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.",
+    "link": "https://nodejs.org"
     },
             {
                 "id": 3,
@@ -78,42 +78,42 @@
    "card": [
         {
             "id": 1,
-        "img": "/public/assets/img/codelogo.jpg",
+        "img": "/assets/img/codelogo.jpg",
         "title": "write clean and mantainable code",
        "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
 
     },
        {
            "id": 2,
-        "img": "/public/assets/img/css-pic.png",
+        "img": "/assets/img/css-pic.png",
         "title": "write clean and mantainable code",
        "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
         
     },
        {
            "id": 3,
-        "img": "/public/assets/img/ideas-pic.jpg",
+        "img": "/assets/img/ideas-pic.jpg",
         "title": "write clean and mantainable code",
        "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
         
     },
        {
            "id": 4,
-        "img": "/public/assets/img/idea-pic.jpg",
+        "img": "/assets/img/idea-pic.jpg",
         "title": "write clean and mantainable code",
        "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
         
     },
        {
            "id": 5,
-        "img": "/public/assets/img/dev-1.png",
+        "img": "/assets/img/dev-1.png",
         "title": "write clean and mantainable code",
        "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
         
     },
        {
            "id": 6,
-        "img": "/public/assets/img/design-pic.jpg",
+        "img": "/assets/img/design-pic.jpg",
         "title": "write clean and mantainable code",
      "text":  "fellowing the best coding pratice lean for year to write a clean readable code"
     }
