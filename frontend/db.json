@@ -24,29 +24,30 @@
          "title":"Nodejs",
          "text":"A  Javascript run time for server side"
       },
+
       {
-         " id":5,
-         " image":"/assets/img/myport-javascript-icon.png",
-         "title":"Javascript",
-         "text":"A Javascript"
-      },
-      {
-         " id":6,
-         " image":"/assets/img/myport-redux-icon.png",
-         "title":"Redux",
-         "text":"A React Global State Management"
-      },
-      {
-         "id":7,
+         "id":5,
          "image":"/assets/img/myport-git-icon.png",
          "title":"Git",
          "text":"A Javascript"
       },
       {
-         "id":8,
+         "id":6,
          "image":"/assets/img/myport-native-icon.png",
          "title":"React-Native",
          "text":"React Framework"
+      },
+         {
+         "id":7,
+         "image":"/assets/img/redux.png",
+          "title":"Redux",
+   "text":"A React Global State Management "
+      },
+      {
+         "id":8,
+         "image":"/assets/img/java.png",
+         "title":"Javascript",
+   "text":"A Javascript"
       }
    ],
    "description":[
@@ -184,196 +185,199 @@
     }
    ],
    "tech": [
-      {
-   "icon":"/public/assets/svg/javascript.svg",
+  {
+   "id":1,
+   "category":"frontend",
+   "icon":"/assets/svg/javascript.svg",
    "name":"javascript ",
    "desc":"javascript is a web programming lamguage"
 },
 {
-   " id":2,
+   "id":2,
    "category":"frontend",
-   "icon":"/public/assets/svg/css3.png",
-   " name":"css",
+   "icon":"/assets/svg/css3.png",
+   "name":"css",
    "desc":" a markup language for web development"
 },
 {
-   " id":3,
+   "id":3,
    "category":"frontend",
-   " icon":"/public/assets/svg/react.svg",
+   "icon":"/assets/svg/react.svg",
    "name":"reactjs",
    "desc":"a frontend labery for quick development"
 },
 {
-   " id":4,
+   "id":4,
    "category":"frontend",
-   "icon":"/public/assets/svg/redux.svg",
+   "icon":"/assets/svg/redux.svg",
    "name":"redux",
    "desc":"a reactjs complex state management"
 },
 {
-   " id":5,
-   " category":"frontend",
-   " icon":"/public/assets/svg/sass.svg",
+   "id":5,
+   "category":"frontend",
+   "icon":"/assets/svg/sass.svg",
    "name":"sass",
-   " desc":"a css framwork for writing advanced css"
+   "desc":" a css framwork for writing advanced css"
 },
 {
-   " id":6,
+   "id":6,
    "category":"frontend",
-   "icon":"/public/assets/svg/typescript.svg",
+   "icon":"/assets/svg/typescript.svg",
    "name":"Typescripts",
    "desc":" a javascript framework for writing type checking and debugging"
 },
 {
-   " id":7,
+   "id":7,
    "category":"backend",
-   " icon":"/public/assets/svg/nodejs.svg",
-   " name":"nodejs",
-   " desc":"a javascript runtime to write server-side code"
+   "icon":"/assets/svg/nodejs.svg",
+   "name":"nodejs",
+   "desc":" a javascript runtime to write server-side code"
 },
 {
    "id":8,
    "category":"backend",
    "icon":"/assets/svg/express.svg",
-   " name":"express",
-   " desc":"nodejs framework to write easy server-side cod"
+   "name":"express",
+   "desc":" nodejs framework to write easy server-side code"
 },
 {
-   " id":9,
+   "id":9,
    "category":"backend",
-   " icon":"/public/assets/svg/handlebars.svg",
+   "icon":"/assets/svg/handlebars.svg",
    "name":"handerbars",
    "desc":"a server-side markup language"
 },
 {
-   " id":10,
+   "id":10,
    "category":"tools",
-   "icon":"/public/assets/svg/github.svg",
+   "icon":"/assets/svg/github.svg",
    "name":"github",
-   "desc":"a version control to manage projec"
+   "desc":"a version control to manage project"
 },
 {
-   " id":11,
-   "category":"tool",
-   "icon":"/public/assets/svg/visualstudio.s",
-   " name":"visual studio code",
-   " desc":" a code edito"
-},
-{
-   " id":12,
-   "category":"tool",
-   " icon":"/public/assets/svg/webpack.sv",
-   " name":"webpac",
-   " desc":"javascript bundler and compile"
-},
-{
-   " id":13,
-   "category":"tool",
-   "icon":"/public/assets/svg/yarn.sv",
-   "name":"yar",
-   "desc":"a package manage"
-},
-{
-   " id":14,
+   "id":11,
    "category":"tools",
-   " icon":"/public/assets/svg/hosting.svg",
-   " name":"hosting",
+   "icon":"/assets/svg/visualstudio.svg",
+   "name":"visual studio code",
+   "desc":" a code editor"
+},
+{
+   "id":12,
+   "category":"tools",
+   "icon":"/assets/svg/webpack.svg",
+   "name":"webpack",
+   "desc":" javascript bundler and compiler"
+},
+{
+   "id":13,
+   "category":"tools",
+   "icon":"/assets/svg/yarn.svg",
+   "name":"yarn",
+   "desc":" a package manager"
+},
+{
+   "id":14,
+   "category":"tools",
+   "icon":"/assets/svg/hosting.svg",
+   "name":"hosting",
    "desc":"deployment and server file handler"
 },
 {
-   " id":15,
+   "id":15,
    "category":"frontend",
-   " icon":"/public/assets/svg/html5.svg",
-   " name":"html5",
-   " desc":"a markup language"
+   "icon":"/assets/svg/html5.svg",
+   "name":"html5",
+   "desc":"a markup language"
 },
 {
    "id":16,
    "category":"frontend",
-   "icon":"/public/assets/svg/styled-components.svg",
+   "icon":"/assets/svg/styled-components.svg",
    "name":"styled-components",
    "desc":"a reactjs tool for advance styling"
 },
 {
-   "  id":17,
+   "id":17,
    "category":"frontend",
-   "icon":"/public/assets/svg/tailwind.png",
+   "icon":"/assets/svg/tailwind.png",
    "name":"tailwind css",
    "desc":"deployment and server file handler"
 },
 {
-   " id":18,
+   "id":18,
    "category":"frontend",
-   "icon":"/public/assets/svg/material.png",
+   "icon":"/assets/svg/material.png",
    "name":"material-ui",
-   " desc":"deployment and server file handler"
+   "desc":"deployment and server file handler"
 },
 {
-   " id":19,
+   "id":19,
    "category":"frontend",
-   " icon":"/public/assets/svg/bootstrap.svg",
-   " name":"bootstrap",
-   " desc":"deployment and server file handler"
+   "icon":"/assets/svg/bootstrap.svg",
+   "name":"bootstrap",
+   "desc":"deployment and server file handler"
 },
 {
-   " id":20,
+   "id":20,
    "category":"backend",
-   " icon":"dd/public/assets/svg/EJS.png",
+   "icon":"/assets/svg/EJS.png",
    "name":"EJS",
    "desc":"deployment and server file handler"
 },
 {
-   " id":21,
+   "id":21,
    "category":"backend",
-   " icon":"dd/public/assets/svg/jwt.png",
+   "icon":"/assets/svg/jwt.png",
    "name":"json web token",
    "desc":"deployment and server file handler"
 },
 {
-   " id":22,
+   "id":22,
    "category":"backend",
-   "icon":"dd/public/assets/svg/kbcrypt.png",
+   "icon":"/assets/svg/kbcrypt.png",
    "name":"bcrypt",
-   " desc":"deployment and server file handler"
+   "desc":"deployment and server file handler"
 },
 {
-   " id":23,
+   "id":23,
    "category":"backend",
-   "icon":"dd/public/assets/svg/mongoose.svg",
+   "icon":"/assets/svg/mongoose.svg",
    "name":"mongoose",
    "desc":"deployment and server file handler"
 },
 {
    "id":24,
    "category":"backend",
-   " icon":"/public/assets/svg/nodemon.png",
+   "icon":"/assets/svg/nodemon.png",
    "name":"nodemon",
    "desc":"deployment and server file handler"
 },
 {
    "id":25,
-   "icon":"/public/assets/svg/nginx.svg",
+   "category":"tools",
+   "icon":"/assets/svg/nginx.svg",
    "name":"nginx",
-   "desc":"deployment and server file handle"
+   "desc":"deployment and server file handler"
 },
 {
    "id":26,
    "category":"tools",
-   "icon":"/public/assets/svg/cloud.jpg",
+   "icon":"/assets/svg/cloud.jpg",
    "name":"cloud computing",
    "desc":"deployment and server file handler"
 },
 {
    "id":27,
    "category":"tools",
-   "icon":"/public/assets/svg/npm.svg",
-   " name":"npm",
-   " desc":"deployment and server file handler"
+   "icon":"/assets/svg/npm.svg",
+   "name":"npm",
+   "desc":"deployment and server file handler"
 },
 {
    "id":28,
    "category":"backend",
-   "icon":"/public/assets/svg/next.png",
+   "icon":"/assets/svg/next.png",
    "name":"nextjs",
    "desc":"deployment and server file handler"
 }

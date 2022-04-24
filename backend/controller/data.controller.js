@@ -1,3 +1,5 @@
+const Project = require('../models/data.model')
+
 //  create data 
 const createData = async (req,res) => {
     try{

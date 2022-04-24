@@ -1,54 +1,53 @@
 
 export const slider = [
 {
-    id: 1,
-    image: '/assets/img/myport-react-icon.png',
-    title: 'React Library ',
-    text: 'A Javascript  Libery  for a View  '
+   "id":1,
+   "image":"/assets/img/myport-react-icon.png",
+   "title":"React Library ",
+   "text":"A Javascript  Libery  for a View  "
 },
 {
-    id: 2,
-    image: '/assets/img/myport-css-icon.png',
-    title: 'CSS',
-    text: 'it is use to syle our component'
+   "id":2,
+   "image":"/assets/img/myport-css-icon.png",
+   "title":"CSS",
+   "text":"it is use to syle our component"
 },
 {
-    id: 3,
-    image: '/assets/img/myport-material-icon.png',
-    title: 'Metarial-Ui',
-    text: ' '
+   "id":3,
+   "image":"/assets/img/myport-material-icon.png",
+   "title":"Metarial-Ui",
+   "text":" "
 },
 {
-    id: 4,
-    image: '/assets/img/myport-node-icon.png',
-    title: 'Nodejs',
-    text: 'A  Javascript run time for server side '
+   "id":4,
+   "image":"/assets/img/myport-node-icon.png",
+   "title":"Nodejs",
+   "text":"A  Javascript run time for server side "
+},
+   {
+   "id":5,
+   "image":"/assets/img/javascript.png",
+   "title":"Javascript",
+   "text":"A Javascript   "
 },
 {
-    id: 5,
-    image: '/assets/img/myport-javascript-icon.png',
-    title: 'Javascript',
-    text: 'A Javascript   '
+   "id":6,
+   "image":"/assets/img/myport-redux.png",
+   "title":"Redux",
+   "text":"A React Global State Management "
 },
 {
-    id: 6,
-    image: '/assets/img/myport-redux-icon.png',
-    title: 'Redux',
-    text: 'A React Global State Management '
+   "id":7,
+   "image":"/assets/img/myport-git-icon.png",
+   "title":"Git",
+   "text":"A Javascript   "
 },
 {
-    id: 7,
-    image: '/assets/img/myport-git-icon.png',
-    title: 'Git',
-    text: 'A Javascript   '
-},
-{
-    id: 8,
-    image: '/assets/img/myport-native-icon.png',
-    title: 'React-Native',
-    text: 'React Framework'
-},
-
+   "id":8,
+   "image":"/assets/img/myport-native-icon.png",
+   "title":"React-Native",
+   "text":"React Framework"
+}
 ]
 
 export const desc = [

@@ -6,14 +6,23 @@ import { FaAngleDoubleLeft } from 'react-icons/fa'
 import 'tippy.js/dist/tippy.css'
 import { tech } from '../../data'
 import { Flip, Bounce } from 'react-reveal'
+import { useQuery } from 'react-query'
+import axios from 'axios'
 const category = [ ...new Set(tech.map((item) => item.category))]
 function Skill() {
-    const [ items, setItems ] = useState([])
+     const [ items, setItems ] = useState([])
+     const { isLoading, isFetching, data} = useQuery('get_tech', () => {
+         return axios.get('http://localhost:5000/tech')
+     })
+     console.log(data?.data)
+    const category = [ ...new Set(data?.data.map((item) => item.category))]
     const filtered = (category) => {
-        const newItem = tech.filter((item) => item.category === category)
-        console.log(newItem)
+        const newItem = data?.data.filter((item) => item.category === category)
         setItems(newItem)
     } 
+    if(isLoading || isFetching){
+        return <h1>Loading...</h1>
+    }
   return (
     <Container>
     <Wrapper>
