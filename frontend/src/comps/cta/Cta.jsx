@@ -1,16 +1,21 @@
 import React,{ useState, useEffect, useCallback } from 'react'
 import { CtaContainer, Wrapper, Button, Typo, Num, Option, Next, Back  } from './cta.style'
-import { cta } from '../../data'
+// import { cta } from '../../data'
 import { Bounce, LightSpeed } from 'react-reveal'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useQuery } from 'react-query'
 function Cta() {
+  const { isLoading, data } = useQuery('get_cta', () => {
+      return axios.get('http://localhost:5000/cta')
+  })
   const [index, setIndex ] = useState(0)
-
+console.log(data?.data)
   const moveCta = useCallback((direction) => {
    if(direction === 'left'){
-    setIndex(index > 0 ? index - 1 : cta.length-1)
+    setIndex(index > 0 ? index - 1 : data.data.length-1)
 }else{
-  setIndex(index < cta.length-1 ? index + 1 : 0)
+  setIndex(index < data.data.length-1 ? index + 1 : 0)
 }
   })
 
@@ -20,11 +25,14 @@ useEffect(() => {
   },5000)
   return () => clearInterval(getSlide)
 },[moveCta])
+if(isLoading){
+  return <h1>Loading...</h1>
+}
    return (
            <Bounce>
     <CtaContainer>
        {
-         cta.map((item,i) => {
+         data.data.map((item,i) => {
            const { id, title, msg } = item
            return(
              <LightSpeed>

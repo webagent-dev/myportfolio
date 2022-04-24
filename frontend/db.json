@@ -146,43 +146,43 @@
     }
    ],
    "cta":[
-           {
-        "id": 1,
-        "title": [
-            {
-            "text": "View My Project",
-            "link": "/my_project"
-            },
-              {
-            "text": "about me",
-            "link": "/about_me"
-            },
-              {
-           " text": "hire me",
-            "link": "/my_contact"
-            }
-        ],
-        "msg": "the message"
-    },
+        {
+   "id":1,
+   "title":[
       {
-        "id": 2,
-        "title": [
-            {
-            "text": "contact me",
-        "link": "/my_contac"
-            },
-              {
-            "text": "my resume",
-            "link": "/my_resume"
-            },
-              {
-           " text": "My GitHub",
-            "link": "/about_me",
-            "a": "https://github.com/webagent-dev"
-            }
-        ],
-        "msg": " the message"
-    }
+         "text":"View My Project",
+         "link":"/my_project"
+      },
+      {
+         "text":"about me",
+         "link":"/about_me"
+      },
+      {
+         "text":"hire me",
+         "link":"/my_contact"
+      }
+   ],
+   "msg":"it my message"
+},
+{
+   "id":2,
+   "title":[
+      {
+         "text":"contact me",
+         "link":"/my_contact"
+      },
+      {
+         "text":"my resume",
+         "link":"/my_resume"
+      },
+      {
+         "text":"My GitHub",
+         "link":"/about_me",
+         "a":"https://github.com/webagent-dev"
+      }
+   ],
+   "msg":"it other message"
+}
    ],
    "tech": [
   {
