@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const SliderContainer = styled.div`
     width: 100vw;
-    height: 90vh;
-        margin-top: 80px;
+    height: 80vh;
+      //   margin-top: 80px;
     position: relative;
     display: flex;
      overflow: hidden;
@@ -18,10 +18,12 @@ export const SliderContainer = styled.div`
 
 export const Sliders = styled.div`
    min-width: 100%;
+   margin: 0 auto;
    height: 100%;
    display: flex;
    transform: translateX(${props => props.index * -100}vw);
         transition: all 2s linear;
+        overflow: hidden;
 
      @media(max-width: 750px){
        gap: 1rem;

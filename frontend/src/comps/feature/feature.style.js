@@ -60,5 +60,18 @@ gap: 2rem;
    padding: .5rem;
    box-shadow: 0 .25rem 1rem rgba(0 0 0 / .1);
   `
- export const  Title = styled.h2``
- export const  Text  = styled.p``
+ export const  Title = styled.h2`
+   font-size: 1.5rem;
+   text-align: center;
+   text-transform: capitalize;
+font-family: 'Rowdies', cursive;
+color: gray;
+ `
+ export const  Text  = styled.p`
+   font-family: 'Montserrat', sans-serif;
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 12px;
+
+ `

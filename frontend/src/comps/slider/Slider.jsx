@@ -10,6 +10,8 @@ import { LightSpeed } from 'react-reveal'
 function Slider() {
   const {isLoading, data, isFetching} = useQuery('get_slider',() => {
      return  axios.get('http://localhost:5000/slider')
+  },{
+      
   })
   const [index, setIndex ] = useState(0)
 const handleSlider = useCallback((direction) => {

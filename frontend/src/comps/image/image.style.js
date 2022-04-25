@@ -7,9 +7,10 @@ export const ImageContainer = styled.div`
     justify-content: center;
 `
 export const Img = styled.img`
-        width: 100%;
-    height: 75%;
+        width: 80%;
+         height: 75%;
     object-fit: center;
+    margin: 0 auto;
 
          @media(max-width: 750px){
         height: 70%;
