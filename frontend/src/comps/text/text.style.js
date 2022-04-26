@@ -25,10 +25,18 @@ export const Head = styled.h1`
 
           @media(max-width: 750px){
             font-size: 2.5rem;
-     }         
+     }     
+     @media(max-width: 450px){
+       font-size: 1.2rem;
+     }    
 `
 export const P  = styled.p`
         width: 80%;
      margin: 0 auto;
         text-align: center;
+
+        @media(max-width:450px){
+          font-size: .6rem;
+          font-weight: 700;
+        }
 `

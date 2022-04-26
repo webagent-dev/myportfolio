@@ -17,7 +17,7 @@ padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
-    /* gap: 2rem; */
+     gap: 1.5rem;
 
         @media (max-width: 728px){
          width: 100%;
@@ -29,7 +29,7 @@ padding: 20px;
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    transition: all 1s linear ;
+    transition: all .5s linear ;
     transform: scale(1);
 
     &:hover{
@@ -64,16 +64,24 @@ export const Image = styled.img`
     flex-direction: column;
  `
  export const Title = styled.h2`
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
     font-family: 'Source Code Pro', monospace;
+    @media(max-width: 658px){
+        font-size: 18px;
+    }
  `
  export const  Desc = styled.p`
- max-width: 90%;
+ max-width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-            @media (max-width: 728px){
-      width: 100%;
+    font-size: 15px;
+text-align: center;
+text-transform: capitalize;
+         @media (max-width: 658px){
+         width: 90%;
+         margin: 0 auto;
+         font-size: 10px;
+         font-weight: 700;
     }
  `

@@ -25,9 +25,9 @@ const experience = [
 ]
 
 const mainStyle = {
-  select: styles => ({...styles,   fontSize: "20px",textTransform: "capitalize",backgroundColor:'white', 
+  select: styles => ({...styles,   fontSize: "12px",textTransform: "capitalize",backgroundColor:'white', 
   color: 'skyblue'}),
-  control: styles => ({...styles, backgroundColor: 'whitesmoke',}),
+  control: styles => ({...styles, backgroundColor: 'whitesmoke', fontSize: '12px'}),
   option: styles => ({...styles,  fontFamily: " 'Source Code Pro', monospace", textTransform: "uppercase",  fontSize: '15px',  padding: "12px  24px", cursor: "pointer"})
 }
 

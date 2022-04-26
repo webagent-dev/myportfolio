@@ -145,13 +145,19 @@ export const HeaderWrappers = styled.div`
 export const Title = styled.h1`
     /* font-family: 'Alfa Slab One', cursive; */
     font-family: 'Permanent Marker', cursive;
-
         @media (max-width:670px){
             font-size: 25px;
     }
 `
-export const Small = styled.small`
-/* font-size: 12px; */
+export const Titles = styled(Title)`
+    font-size:  4rem;
+    
+@media(max-width:670px){
+    font-size: 25px;
+}
+`
+export const Small = styled.h3`
+    font-size: 12px
 `
 
    export const  ImageWrapper  = styled.div`
@@ -195,11 +201,22 @@ export const Small = styled.small`
     export const   Descs = styled.h3`
 font-family: 'Rowdies', cursive;
  max-width: ${props => props.width};
- font-size: 12px;
+ font-size: 20px;
  text-align: center;
  text-transform: capitalize;
  font-style: italic;
      @media (max-width:670px){
-        font-size: 10px;
+        font-size: 13px;
     }
+    `
+
+    export const P = styled.p`
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+text-align: center;
+line-height: 25px;
+
+@media (max-width:670px){
+    font-size: 12px;
+}
     `

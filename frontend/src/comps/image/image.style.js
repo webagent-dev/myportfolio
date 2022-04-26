@@ -16,7 +16,7 @@ export const Img = styled.img`
         height: 70%;
      }
 
-          @media(max-width: 750px){
+          @media(max-width: 550px){
             height: 50%;
      }         
 `

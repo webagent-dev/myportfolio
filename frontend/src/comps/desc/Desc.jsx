@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Image, Text } from '../../one'
-import  { DescContainer,Title,Small,  Wrapper,HeaderWrapper, HeaderWrappers, Header, ItemWrapper,
+import  { DescContainer,Title,Small, P, Titles,  Wrapper,HeaderWrapper, HeaderWrappers, Header, ItemWrapper,
    ImageWrapper, Image, TextWrapper, Other, Descs } from './desc.style'
 import { Bounce } from 'react-reveal'
 import { useQuery } from 'react-query'
@@ -17,7 +17,7 @@ function Desc() {
       <HeaderWrapper>
         <Header>
             <Title>What Is Marn Stack</Title>
-        <Descs width='80%'>reliable solution to a full-stack web application</Descs>
+        <Small width='80%'>reliable solution to a full-stack web application</Small>
         </Header>
       </HeaderWrapper>
     <Wrapper>
@@ -29,10 +29,10 @@ function Desc() {
                   <Image  src={item.img} alt='img_desc' />
                 </ImageWrapper>
                   <TextWrapper>
-                  <Title> {item.title} </Title>
+                  <Titles> {item.title} </Titles>
                   <Descs width='60%'>{item.desc}</Descs>
                   <Other>
-                  {item.other}
+                <P>  {item.other} </P>
                   </Other>
                 </TextWrapper>
                   <div className="divider">
@@ -48,7 +48,7 @@ function Desc() {
       <HeaderWrappers>
         <Header>
             <Title>What Is Marn Stack</Title>
-        <Descs width='80%'>reliable solution to a full-stack web application</Descs>
+        <Small width='80%'>reliable solution to a full-stack web application</Small>
         </Header>
       </HeaderWrappers>
       </DescContainer>

@@ -85,6 +85,13 @@ export const SortHeader = styled.h1`
     text-transform: uppercase;
     font-family: 'Source Code Pro', monospace;
     color: skyblue;
+
+    @media (max-width:555px) {
+      font-size: 15px;
+    }
+    @media(max-width: 350px){
+      font-size: 12px;
+    }
 `
 
 // enable Component styled
