@@ -1,53 +1,59 @@
 
 export const slider = [
-{
-   "id":1,
-   "image":"/assets/img/myport-react-icon.png",
-   "title":"React Library ",
-   "text":"A Javascript  Libery  for a View  "
-},
-{
-   "id":2,
-   "image":"/assets/img/myport-css-icon.png",
-   "title":"CSS",
-   "text":"it is use to syle our component"
-},
-{
-   "id":3,
-   "image":"/assets/img/myport-material-icon.png",
-   "title":"Metarial-Ui",
-   "text":" "
-},
-{
-   "id":4,
-   "image":"/assets/img/myport-node-icon.png",
-   "title":"Nodejs",
-   "text":"A  Javascript run time for server side "
-},
-   {
-   "id":5,
-   "image":"/assets/img/javascript.png",
-   "title":"Javascript",
-   "text":"A Javascript   "
-},
-{
-   "id":6,
-   "image":"/assets/img/myport-redux.png",
-   "title":"Redux",
-   "text":"A React Global State Management "
-},
-{
-   "id":7,
-   "image":"/assets/img/myport-git-icon.png",
-   "title":"Git",
-   "text":"A Javascript   "
-},
-{
-   "id":8,
-   "image":"/assets/img/myport-native-icon.png",
-   "title":"React-Native",
-   "text":"React Framework"
-}
+          {
+         id:1,
+         "image":"/android-chrome-512x512.png",
+         "title":"Empowering your web identity",
+         "text":"I Can develop websites that ignite your business That tells visitors who you are and what you can  offer them in a better way "
+      },
+         {
+         id:2,
+         image:"/assets/img/myport-react-icon.png",
+         title:"React Library ",
+         text:"A JavaScript library for building user interfaces "
+      },
+      {
+         id:3,
+         image:"/assets/img/myport-css-icon.png",
+         title:"CSS",
+         text:"Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML."
+      },
+      {
+         id:4,
+         image:"/assets/img/myport-material-icon.png",
+         title:"Metarial-Ui",
+         text:"MUI offers a comprehensive suite of UI tools to help you ship new features faster. Start with Material UI, our fully-loaded component library, or bring your own design system to our production-ready components."
+      },
+      {
+         id:5,
+         image:"/assets/img/myport-node-icon.png",
+         title:"Nodejs",
+         text:"A asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications."
+      },
+      {
+         id:6,
+         image:"/assets/img/myport-git-icon.png",
+         title:"Git",
+         text:"Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+      },
+      {
+         id:7,
+         image:"/assets/img/myport-native-icon.png",
+         title:"React-Native",
+         text:"React Native lets you create truly native apps and doesn't compromise your users' experiences. It provides a core set of platform agnostic native components"
+      },
+         {
+         id:8,
+         image:"/assets/img/redux.png",
+          title:"Redux",
+        text:" Predictable. Redux helps you write applications that behave consistently ; Centralized. Centralizing your application's state and logic enables powerful "
+      },
+      {
+         id:9,
+         image:"/assets/img/java.png",
+         title:"Javascript",
+        text:"JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much."
+      }
 ]
 
 export const desc = [
@@ -76,21 +82,23 @@ export const desc = [
 
 export const card = [
     {
+        id: 1,
         img: '/assets/img/codelogo.jpg',
-        title: 'write clean and mantainable code',
-       text:  'fellowing the best coding pratice lean for year to write a clean readable code'
+        title: 'write clean and maintainable code',
+        text: 'fellowing the best coding practice am learning for years to write a clean readable code and create Exceptional website to development  the best of everything including content, design, functionality, or fonts!'
 
     },
-       {
+    {
+           id: 2,
         img: '/assets/img/css-pic.png',
-        title: 'write clean and mantainable code',
+       "title": "pixels perfect website styling",
        text:  'fellowing the best coding pratice lean for year to write a clean readable code'
         
     },
        {
         img: '/assets/img/ideas-pic.jpg',
-        title: 'write clean and mantainable code',
-       text:  'fellowing the best coding pratice lean for year to write a clean readable code'
+        title: 'web & mobile development',
+           text: 'Bring your ideas into reality by collaborating with the best Frontend Development services offered by reactjs We can help deliver your brand story, improve your visual identity, and make gain a strategic advantage in the market.'
         
     },
        {

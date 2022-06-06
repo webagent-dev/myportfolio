@@ -16,8 +16,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 // Routers 
 app.use('/project', projectRouter)
-app.use('/auth', authRouter)
-app.use('/auth', updateRouter)
+app.use('api/v1/auth', authRouter)
+app.use('/user', updateRouter)
 //  Send mail route
 app.post('/send_mail',(req, res) => {
     console.log('DATA', req.body)

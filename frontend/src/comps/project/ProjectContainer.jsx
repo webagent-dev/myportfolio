@@ -3,7 +3,7 @@ import { Formik } from 'formik'
 import *as  yap from 'yup'
 import FormikControl from '../formik/FormikControl'
 import FileBase64 from 'react-file-base64'
-import { Container, FormControl,  Label, MyComment,Submit,Header } from '../project/project'
+import { Container, FormControl,  Label, MyComment,Submit,Headers } from '../project/project'
 import { Bounce } from 'react-reveal'
 
 
@@ -31,7 +31,7 @@ function ProjectContainer() {
         {
             props =>     <Container>
                   <Bounce>
-            <Header>{'Comment  On This Project'}</Header>
+            <Headers>{'Comment  On This Project'}</Headers>
               <FormControl>
               <Label htmlFor='name'>Full Name</Label>
               <FormikControl

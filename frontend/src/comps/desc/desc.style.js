@@ -47,7 +47,7 @@ export const HeaderWrapper = styled.div`
 }
 `
 export const Header = styled.div`
-    width: 400px;
+    width: 100%;
 height: 100%;
     background: url('/assets/img/desc-header') ;
     color: white;
@@ -145,6 +145,7 @@ export const HeaderWrappers = styled.div`
 export const Title = styled.h1`
     /* font-family: 'Alfa Slab One', cursive; */
     font-family: 'Permanent Marker', cursive;
+    text-transform: capitalize;
         @media (max-width:670px){
             font-size: 25px;
     }

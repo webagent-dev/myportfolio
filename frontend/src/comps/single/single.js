@@ -1,5 +1,5 @@
 import React from 'react'
-import { SingleContainer,  Background, Wrapper,VideoContainer, RateContainer,Rate, Icon,Num, Title,Name,TechContainer,Tech,Desc, FuntContainer,List, Underline, Div } from './single.style'
+import { SingleContainer,  Background, Wrapper,VideoContainer, DetailContainer,Rate, Detail, Title,Name,TechContainer,Tech,Desc, FuntContainer,List, Underline, Div } from './single.style'
 import { Fade } from 'react-reveal'
 function Single() {
   return (
@@ -14,16 +14,17 @@ function Single() {
           <VideoContainer>
 
           </VideoContainer>
-          <RateContainer>
+          <DetailContainer>
             <Rate>
-              <Icon></Icon>
-              <Num>23</Num>
+              <Detail>Live Site</Detail>
             </Rate>
-                 <Rate>
-              <Icon></Icon>
-              <Num>34</Num>
+            <Rate>
+              <Detail>  GitHub Link </Detail>
             </Rate>
-          </RateContainer>
+            <Rate>
+              <Detail></Detail>
+            </Rate>
+          </DetailContainer>
     <Title>Project Description :-</Title>
       <Desc>.mvbslkvbsvbfqepgifvasc vnsc vfbvj vhsgfufgghrioghjknm  dfhpf[;A';lkACJKLCKJVL V SVIUFGYERGY</Desc>
       <Title>The Common  Funtionalities are :-</Title>

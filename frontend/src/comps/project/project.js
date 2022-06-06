@@ -25,6 +25,11 @@ export const HeaderContainer = styled.div`
 
         }
  `
+ export const Headers = styled(Header)`
+        @media(max-width:55px){
+          font-size: 12px;
+        }
+ `
   export const Info  = styled.div`
 
     color: black;
@@ -103,9 +108,7 @@ export const SortHeader = styled.h1`
          top: 0;
          left: 0;
          overflow: hidden;
-         display: flex;
-         align-items: center;
-         justify-content: center;
+
       `
        export const  Container = styled(Form)`
         width: 70%;
@@ -118,7 +121,7 @@ export const SortHeader = styled.h1`
 
                     @media (max-width:755px) {
                       width: 90%;
-                      height: auto;
+                      height: 80%;
             
         }
        `
@@ -145,6 +148,10 @@ export const SortHeader = styled.h1`
             font-weight: 700;
             color: skyblue;
             padding: 5px 0px;
+
+            @media(max-width: 550px){
+                font-size: 15px;
+            }
         `
          export const  Input = styled(Field)`
           width: 80%;

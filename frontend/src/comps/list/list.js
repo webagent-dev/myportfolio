@@ -197,6 +197,7 @@ export const ImageWrapper = styled.div`
        export const View  = styled(Comment)`
               font-size: 10px;
        `
-       export const Icons = styled.div``
+       export const Live = styled.a`
+       `
 
      

@@ -1,6 +1,6 @@
 import React, {  useCallback } from 'react'
 // import { Underline } from '../footer/footer.style'
-import { ProjectListContainer, Wrapper, Image, ProjectContent, Name, Underline,Desc,ImageWrapper, IconWrapper,Icon, Text, Stack,StackWrapper, Tech, Other, RateContainer, Rate, Num, Icons, Comment, View, } from './list'
+import { ProjectListContainer, Wrapper, Image, ProjectContent, Name, Underline,Desc,ImageWrapper, IconWrapper,Icon, Text, Stack,StackWrapper, Tech, Other, RateContainer, Rate, Num, Icons, Comment, View, Live } from './list'
 import { FcInfo,  FcNightLandscape,} from 'react-icons/fc'
 import { NavLink } from 'react-router-dom'
 import { Flip, Bounce } from 'react-reveal'
@@ -51,16 +51,9 @@ function ProjectList({project, comment, focus}) {
             </Bounce>
             </StackWrapper>
             <Other>
-              <RateContainer>
-                <Rate>
-                  <Icons><FcInfo /></Icons>
-                  <Num>233</Num>
-                </Rate>
-                  <Rate>
-                  <Icons><FcNightLandscape /></Icons>
-                  <Num>345</Num>
-                </Rate>
-              </RateContainer>
+              <Live>
+            <View>Live Site</View>
+            </Live>
               <Comment type='button' onClick={ handleClick}>comment</Comment>
               <NavLink to='/get_project/1'>
               <View>See More Details</View>

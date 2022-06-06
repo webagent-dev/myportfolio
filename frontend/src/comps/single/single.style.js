@@ -9,7 +9,6 @@ background-position: center center;
 background-repeat: no-repeat;
 position: relative;
 position: relative;
-    margin-top: 80px;
 `
 export const Background = styled.div`
     width: 100%;
@@ -41,14 +40,20 @@ export const Wrapper = styled.div`
 `
  export const VideoContainer = styled.div`
  width: 100%;
+ height: 400px;
  min-height: 400px;
 box-shadow: inset -6px -6px -12px black inset 6px 6px 12px black;
  border: 2px solid gray;
  border-radius: 5px;
-background: whitesmoke;
+background: red;
 
+
+@media(max-width:450px){
+  height: 250px;
+  min-height: 250px;
+}
  `
-  export const RateContainer = styled.div`
+  export const DetailContainer = styled.div`
     display: flex;
     margin-top: 20px;
   `
@@ -94,3 +99,4 @@ export const Underline = styled.div`
     font-family: 'Montserrat', sans-serif;
        padding: 5px 20px;
    `
+   export const Detail = styled.div``

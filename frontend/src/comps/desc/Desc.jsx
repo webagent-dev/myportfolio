@@ -47,8 +47,8 @@ function Desc() {
      </Wrapper>
       <HeaderWrappers>
         <Header>
-            <Title>What Is Marn Stack</Title>
-        <Small width='80%'>reliable solution to a full-stack web application</Small>
+            <Title> create advance web and mobile application </Title>
+        <Small width='80%'>reliable and professional website creation</Small>
         </Header>
       </HeaderWrappers>
       </DescContainer>
