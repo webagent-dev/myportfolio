@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const    { getAdmin, updateAdmin, deleteAdmin } = require('../controller/update.controller')
+const { getAdmin, updateAdmin, deleteAdmin } = require('../controller/update.controller')
+const verifyToken = require('../middleware/verifyToken')
 
-router.get('/auth_admin/:id',getAdmin)
-router.put('/auth_admin/:id', updateAdmin)
-router.delete('/auth_admin/:id', deleteAdmin)
-
+router.get('/get/:id', verifyToken, getAdmin)
+router.put('/get/:id', verifyToken, updateAdmin)
+router.delete('/get/:id', verifyToken, deleteAdmin)
 
 
 module.exports = router

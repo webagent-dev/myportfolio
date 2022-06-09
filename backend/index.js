@@ -4,10 +4,8 @@ const app = express();
 const PORT = process.env.PORT || 5500
 const logger = `server started at http://localhost:${PORT}`
 const connectToDb = require('./db/connect')
-const projectRouter = require('./routes/data.router')
-const authRouter = require('./routes/auth.router')
-const updateRouter = require('./routes/update.route')
 const sendMail = require('./services/mail')
+const authRouter = require('./routes/auth.router')
 const cors = require('cors')
 
 // Middlewares Component
@@ -15,9 +13,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 // Routers 
-app.use('/project', projectRouter)
-app.use('api/v1/auth', authRouter)
-app.use('/user', updateRouter)
+app.use('/api/v1/auth', authRouter)
 //  Send mail route
 app.post('/send_mail',(req, res) => {
     console.log('DATA', req.body)

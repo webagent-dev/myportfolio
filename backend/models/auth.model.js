@@ -9,15 +9,18 @@ const authSchema = new mongoose.Schema({
 })
 
 
-authSchema.pre('save', async () => {
+authSchema.pre('save', async function(){
     const salt = await bcrypt.genSalt(10)
     this.password = await bcrypt.hash(this.password, salt)
 })
-
+authSchema.methods.comparePassword = async function (pass) {
+    const isMatch = await bcrypt.compare(pass, this.password)
+    return isMatch
+}
 authSchema.methods.createToken = function () {
     return jwt.sign(
         { id: this._id, admin: this.isAdmin },
         process.env.SECRET_KEY,
-    {expiration: process.env.LOST})
+    {expiresIn: process.env.LOST})
 }
 module.exports = mongoose.model('admin', authSchema)
